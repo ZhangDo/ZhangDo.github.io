@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>一个渣渣学习Swift（一） | Walker的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="简单介绍下自己我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年">
@@ -16,69 +17,205 @@
 <meta name="twitter:title" content="一个渣渣学习Swift（一）">
 <meta name="twitter:description" content="简单介绍下自己我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年">
   
-    <link rel="alternate" href="/atom.xml" title="Walker的博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Walker的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link rel="icon" href="//favicon.png">
   
   <link rel="stylesheet" href="/css/style.css">
-  
-
 </head>
 
 <body>
   <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Walker的博客</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">小个子，塌鼻梁,一个在人群中不起眼的骚年</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-一个渣渣学习Swift（一）" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/13/一个渣渣学习Swift（一）/" class="article-date">
-  <time datetime="2016-06-13T02:32:43.000Z" itemprop="datePublished">2016-06-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Swift/">Swift</a>
-  </div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/blog/https://avatars1.githubusercontent.com/u/14886634?v=3&amp;s=460" class="js-avatar">
+			
+		</a>
 
-  </div>
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Walker</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">小个子，塌鼻梁,一个在人群中不起眼的骚年</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						<li>Links</li>
+						
+						
+						<li>Über</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/ZhangDo" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/u/3055673883/home?topnav=1&wvr=6" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+					        
+								<a class="mail" target="_blank" href="/dark_horse8023@163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">小个子，塌鼻梁,一个在人群中不起眼的骚年</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Walker</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img lazy-src="/blog/https://avatars1.githubusercontent.com/u/14886634?v=3&amp;s=460" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Walker</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">小个子，塌鼻梁,一个在人群中不起眼的骚年</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/ZhangDo" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/3055673883/home?topnav=1&wvr=6" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+						<a class="mail" target="_blank" href="/dark_horse8023@163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-一个渣渣学习Swift（一）" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/13/一个渣渣学习Swift（一）/" class="article-date">
+  	<time datetime="2016-06-13T02:32:43.000Z" itemprop="datePublished">2016-06-13</time>
+</a>
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
@@ -90,29 +227,37 @@
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Swift/">Swift</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简单介绍下自己"><a href="#简单介绍下自己" class="headerlink" title="简单介绍下自己"></a>简单介绍下自己</h2><h3 id="我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年，对Swift还是有点生涩，没关系，共同学习嘛！别的就不扯淡了，开始我们的Swift之路吧！"><a href="#我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年，对Swift还是有点生涩，没关系，共同学习嘛！别的就不扯淡了，开始我们的Swift之路吧！" class="headerlink" title="我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年，对Swift还是有点生涩，没关系，共同学习嘛！别的就不扯淡了，开始我们的Swift之路吧！"></a>我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年，对Swift还是有点生涩，没关系，共同学习嘛！别的就不扯淡了，开始我们的Swift之路吧！</h3><h3 id="我们就从UI学起（毕竟是看得见的东西）在iOS开发中，我们经常看到的控件是UITableView，我们从它来学起。"><a href="#我们就从UI学起（毕竟是看得见的东西）在iOS开发中，我们经常看到的控件是UITableView，我们从它来学起。" class="headerlink" title="我们就从UI学起（毕竟是看得见的东西）在iOS开发中，我们经常看到的控件是UITableView，我们从它来学起。"></a>我们就从UI学起（毕竟是看得见的东西）在iOS开发中，我们经常看到的控件是UITableView，我们从它来学起。</h3><h2 id="创建UITableView"><a href="#创建UITableView" class="headerlink" title="创建UITableView"></a>创建UITableView</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        self.title = &quot;tableView of Swift&quot;</span><br><span class="line">        //给TableView上头视图</span><br><span class="line">        let headView = UIView.init(frame: CGRectMake(0, 64, self.view.frame.size.width, 200))</span><br><span class="line">        headView.backgroundColor = UIColor(red: 1.00, green: 0.41,blue: 1.00,alpha: 1.00)</span><br><span class="line">        </span><br><span class="line">        //创建UITableView</span><br><span class="line">        let tableView = UITableView(frame: self.view.bounds, style: UITableViewStyle .Plain)</span><br><span class="line">        tableView.registerClass(UITableViewCell .self, forCellReuseIdentifier: ID)</span><br><span class="line">        tableView.tableHeaderView = headView</span><br><span class="line">        tableView.delegate = self</span><br><span class="line">        tableView.dataSource = self</span><br><span class="line">        self.view .addSubview(tableView)</span><br><span class="line">        </span><br><span class="line">        // Do any additional setup after loading the view, typically from a nib.</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+        <h2 id="简单介绍下自己"><a href="#简单介绍下自己" class="headerlink" title="简单介绍下自己"></a>简单介绍下自己</h2><h3 id="我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年，对Swift还是有点生涩，没关系，共同学习嘛！别的就不扯淡了，开始我们的Swift之路吧！"><a href="#我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年，对Swift还是有点生涩，没关系，共同学习嘛！别的就不扯淡了，开始我们的Swift之路吧！" class="headerlink" title="我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年，对Swift还是有点生涩，没关系，共同学习嘛！别的就不扯淡了，开始我们的Swift之路吧！"></a>我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年，对Swift还是有点生涩，没关系，共同学习嘛！别的就不扯淡了，开始我们的Swift之路吧！</h3><h3 id="我们就从UI学起（毕竟是看得见的东西）在iOS开发中，我们经常看到的控件是UITableView，我们从它来学起。"><a href="#我们就从UI学起（毕竟是看得见的东西）在iOS开发中，我们经常看到的控件是UITableView，我们从它来学起。" class="headerlink" title="我们就从UI学起（毕竟是看得见的东西）在iOS开发中，我们经常看到的控件是UITableView，我们从它来学起。"></a>我们就从UI学起（毕竟是看得见的东西）在iOS开发中，我们经常看到的控件是UITableView，我们从它来学起。</h3><h2 id="创建UITableView"><a href="#创建UITableView" class="headerlink" title="创建UITableView"></a>创建UITableView</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">override func viewDidLoad() &#123;</div><div class="line">        super.viewDidLoad()</div><div class="line">        self.title = &quot;tableView of Swift&quot;</div><div class="line">        //给TableView上头视图</div><div class="line">        let headView = UIView.init(frame: CGRectMake(0, 64, self.view.frame.size.width, 200))</div><div class="line">        headView.backgroundColor = UIColor(red: 1.00, green: 0.41,blue: 1.00,alpha: 1.00)</div><div class="line">        </div><div class="line">        //创建UITableView</div><div class="line">        let tableView = UITableView(frame: self.view.bounds, style: UITableViewStyle .Plain)</div><div class="line">        tableView.registerClass(UITableViewCell .self, forCellReuseIdentifier: ID)</div><div class="line">        tableView.tableHeaderView = headView</div><div class="line">        tableView.delegate = self</div><div class="line">        tableView.dataSource = self</div><div class="line">        self.view .addSubview(tableView)</div><div class="line">        </div><div class="line">        // Do any additional setup after loading the view, typically from a nib.</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
 <a id="more"></a>
-<h2 id="创建数据源"><a href="#创建数据源" class="headerlink" title="创建数据源"></a>创建数据源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">lazy var datas: [Int] = &#123;</span><br><span class="line">    var nums = [Int]()</span><br><span class="line">    for i in 0...10 &#123;</span><br><span class="line">        nums.append(i)</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">return nums</span><br><span class="line">&#125;()</span><br></pre></td></tr></table></figure>
-<h2 id="实现DataSource-amp-Delegate"><a href="#实现DataSource-amp-Delegate" class="headerlink" title="实现DataSource&amp;Delegate"></a>实现DataSource&amp;Delegate</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"> Cell的高度</span><br><span class="line"> 可以自定义每个Cell的高度（判断Indexpath.row&amp;section）</span><br><span class="line"> </span><br><span class="line"> - returns: height</span><br><span class="line"> */</span><br><span class="line">func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat &#123;</span><br><span class="line">    return 100</span><br><span class="line">&#125;</span><br><span class="line">/**</span><br><span class="line"> Section的个数</span><br><span class="line"> </span><br><span class="line"> - returns: Section</span><br><span class="line"> */</span><br><span class="line">func numberOfSectionsInTableView(tableView: UITableView) -&gt; Int &#123;</span><br><span class="line">    return 1</span><br><span class="line">&#125;</span><br><span class="line">/**</span><br><span class="line"> 每个Section Cell的个数</span><br><span class="line"> </span><br><span class="line"> - returns: data.count</span><br><span class="line"> */</span><br><span class="line">func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int &#123;</span><br><span class="line">    return datas.count</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell &#123;</span><br><span class="line">    let Cell = UITableViewCell(style: UITableViewCellStyle .Subtitle, reuseIdentifier: ID)</span><br><span class="line">    Cell.imageView?.image = UIImage(named: &quot;HeaderImage&quot;)</span><br><span class="line">    Cell.textLabel?.text = &quot;假数据 - \(datas[indexPath.row])&quot;</span><br><span class="line">    Cell.detailTextLabel?.text = &quot;Swift旅程&quot;</span><br><span class="line">    return Cell</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) &#123;</span><br><span class="line">    /**</span><br><span class="line">    点击Cell状态消失</span><br><span class="line">     */</span><br><span class="line">    tableView.deselectRowAtIndexPath(indexPath, animated: true)</span><br><span class="line">    </span><br><span class="line">    print(&quot;点击了第\(indexPath.row)行&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="对Cell进行简单的删除操作"><a href="#对Cell进行简单的删除操作" class="headerlink" title="对Cell进行简单的删除操作"></a>对Cell进行简单的删除操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">     编辑UItableView（删除操作）</span><br><span class="line">     */</span><br><span class="line">    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) &#123;</span><br><span class="line">        if editingStyle == .Delete &#123;</span><br><span class="line">            datas.removeAtIndex(indexPath.row)</span><br><span class="line">            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /**</span><br><span class="line">     修改左滑删除的文字</span><br><span class="line">     */</span><br><span class="line">    func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -&gt; String? &#123;</span><br><span class="line">        return &quot;删除&quot;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="创建数据源"><a href="#创建数据源" class="headerlink" title="创建数据源"></a>创建数据源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">lazy var datas: [Int] = &#123;</div><div class="line">    var nums = [Int]()</div><div class="line">    for i in 0...10 &#123;</div><div class="line">        nums.append(i)</div><div class="line">    </div><div class="line">    &#125;</div><div class="line">return nums</div><div class="line">&#125;()</div></pre></td></tr></table></figure>
+<h2 id="实现DataSource-amp-Delegate"><a href="#实现DataSource-amp-Delegate" class="headerlink" title="实现DataSource&amp;Delegate"></a>实现DataSource&amp;Delegate</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"> Cell的高度</div><div class="line"> 可以自定义每个Cell的高度（判断Indexpath.row&amp;section）</div><div class="line"> </div><div class="line"> - returns: height</div><div class="line"> */</div><div class="line">func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat &#123;</div><div class="line">    return 100</div><div class="line">&#125;</div><div class="line">/**</div><div class="line"> Section的个数</div><div class="line"> </div><div class="line"> - returns: Section</div><div class="line"> */</div><div class="line">func numberOfSectionsInTableView(tableView: UITableView) -&gt; Int &#123;</div><div class="line">    return 1</div><div class="line">&#125;</div><div class="line">/**</div><div class="line"> 每个Section Cell的个数</div><div class="line"> </div><div class="line"> - returns: data.count</div><div class="line"> */</div><div class="line">func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int &#123;</div><div class="line">    return datas.count</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell &#123;</div><div class="line">    let Cell = UITableViewCell(style: UITableViewCellStyle .Subtitle, reuseIdentifier: ID)</div><div class="line">    Cell.imageView?.image = UIImage(named: &quot;HeaderImage&quot;)</div><div class="line">    Cell.textLabel?.text = &quot;假数据 - \(datas[indexPath.row])&quot;</div><div class="line">    Cell.detailTextLabel?.text = &quot;Swift旅程&quot;</div><div class="line">    return Cell</div><div class="line">    </div><div class="line">&#125;</div><div class="line"></div><div class="line">func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) &#123;</div><div class="line">    /**</div><div class="line">    点击Cell状态消失</div><div class="line">     */</div><div class="line">    tableView.deselectRowAtIndexPath(indexPath, animated: true)</div><div class="line">    </div><div class="line">    print(&quot;点击了第\(indexPath.row)行&quot;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="对Cell进行简单的删除操作"><a href="#对Cell进行简单的删除操作" class="headerlink" title="对Cell进行简单的删除操作"></a>对Cell进行简单的删除操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line">     编辑UItableView（删除操作）</div><div class="line">     */</div><div class="line">    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) &#123;</div><div class="line">        if editingStyle == .Delete &#123;</div><div class="line">            datas.removeAtIndex(indexPath.row)</div><div class="line">            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    /**</div><div class="line">     修改左滑删除的文字</div><div class="line">     */</div><div class="line">    func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -&gt; String? &#123;</div><div class="line">        return &quot;删除&quot;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/13/一个渣渣学习Swift（一）/" data-id="cit0xwuzw0009sbf72el8oebe" class="article-share-link">Share</a>
-      
-      
-    </footer>
+    
   </div>
   
     
 <nav id="article-nav">
   
     <a href="/2016/06/20/一个渣渣学习Swift（二）/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
+      <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
           一个渣渣学习Swift（二）
@@ -122,8 +267,8 @@
   
   
     <a href="/2016/06/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
     </a>
   
 </nav>
@@ -131,96 +276,112 @@
   
 </article>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Swift/">Swift</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a></li></ul>
-    </div>
-  </div>
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
-    </div>
-  </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/08/14/别跟我只谈理想，不谈钱/">别跟我只谈理想，不谈钱</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/13/黑夜总会迎来黎明/">黑夜总会迎来黎明</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/08/Swift-分页控制/">Swift:分页控制</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/07/我就是我的神/">我就是我的神</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/07/人间世/">人间世</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="一个渣渣学习Swift（一）" data-title="一个渣渣学习Swift（一）" data-url="http://yoursite.com/2016/06/13/一个渣渣学习Swift（一）/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
       <footer id="footer">
-  
   <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016 Walker<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Walker
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
     </div>
   </div>
 </footer>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: /
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 
   </div>
 </body>
