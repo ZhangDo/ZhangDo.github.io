@@ -1,0 +1,562 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Swift," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="基础部分元组12let error = (code:404, description:&amp;quot;Not Found&amp;quot;)print(&amp;quot;The Status Code is \(error.code)&amp;quot;)//&amp;quot;The Status Code is 404\n&amp;quot;
+String转Int(并不是所有的String都能转Int)12let possibleN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Swift语法记录">
+<meta property="og:url" content="http://yoursite.com/2016/09/13/Swift语法记录/index.html">
+<meta property="og:site_name" content="Walker">
+<meta property="og:description" content="基础部分元组12let error = (code:404, description:&amp;quot;Not Found&amp;quot;)print(&amp;quot;The Status Code is \(error.code)&amp;quot;)//&amp;quot;The Status Code is 404\n&amp;quot;
+String转Int(并不是所有的String都能转Int)12let possibleN">
+<meta property="og:updated_time" content="2016-09-13T05:15:45.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Swift语法记录">
+<meta name="twitter:description" content="基础部分元组12let error = (code:404, description:&amp;quot;Not Found&amp;quot;)print(&amp;quot;The Status Code is \(error.code)&amp;quot;)//&amp;quot;The Status Code is 404\n&amp;quot;
+String转Int(并不是所有的String都能转Int)12let possibleN">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> Swift语法记录 | Walker </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Walker</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">小个子，塌鼻梁,一个在人群中不起眼的骚年</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Swift语法记录
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-09-13T13:14:23+08:00" content="2016-09-13">
+              2016-09-13
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="基础部分"><a href="#基础部分" class="headerlink" title="基础部分"></a>基础部分</h3><h4 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let error = (code:404, description:&quot;Not Found&quot;)</div><div class="line">print(&quot;The Status Code is \(error.code)&quot;)//&quot;The Status Code is 404\n&quot;</div></pre></td></tr></table></figure>
+<h4 id="String转Int-并不是所有的String都能转Int"><a href="#String转Int-并不是所有的String都能转Int" class="headerlink" title="String转Int(并不是所有的String都能转Int)"></a>String转Int(并不是所有的String都能转Int)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let possibleNum = &quot;123456&quot;</div><div class="line">let convertedNumber = Int(possibleNum)//convertedNumber被推测为“Int?”或是“optional Int”</div></pre></td></tr></table></figure>
+<h4 id="可选绑定"><a href="#可选绑定" class="headerlink" title="可选绑定"></a>可选绑定</h4><h5 id="如果Int-possibleNum-返回的可选Int包含一个值，创建一个叫做actuaNumber的新常量并将可选包含的值赋给它，-如果转换成功，actuaNumber常量可以在if语句中的第一个分支中使用。它已经被可选类型包含的值初始化过，所以不需要！使用后缀来获取它的值。下面的例子里，actuaNumber只被用来输出转换结果"><a href="#如果Int-possibleNum-返回的可选Int包含一个值，创建一个叫做actuaNumber的新常量并将可选包含的值赋给它，-如果转换成功，actuaNumber常量可以在if语句中的第一个分支中使用。它已经被可选类型包含的值初始化过，所以不需要！使用后缀来获取它的值。下面的例子里，actuaNumber只被用来输出转换结果" class="headerlink" title="如果Int(possibleNum)返回的可选Int包含一个值，创建一个叫做actuaNumber的新常量并将可选包含的值赋给它， 如果转换成功，actuaNumber常量可以在if语句中的第一个分支中使用。它已经被可选类型包含的值初始化过，所以不需要！使用后缀来获取它的值。下面的例子里，actuaNumber只被用来输出转换结果."></a>如果Int(possibleNum)返回的可选Int包含一个值，创建一个叫做actuaNumber的新常量并将可选包含的值赋给它， 如果转换成功，actuaNumber常量可以在if语句中的第一个分支中使用。它已经被可选类型包含的值初始化过，所以不需要<em>！</em>使用后缀来获取它的值。下面的例子里，actuaNumber只被用来输出转换结果.</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">if let actuaNumber = Int(possibleNum) &#123;</div><div class="line">    print(&quot;\&apos;\(possibleNum)\&apos; has an Integer value of \(actuaNumber)&quot;)//123456&apos; has an Integer value of 123456</div><div class="line">&#125;else &#123;</div><div class="line">    print(&quot;\&apos;\(possibleNum)\&apos; could not be converted to an integer&quot;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h5 id="还可以包含多个可选绑定在if语句中，并使用where子句做布尔值判断。"><a href="#还可以包含多个可选绑定在if语句中，并使用where子句做布尔值判断。" class="headerlink" title="还可以包含多个可选绑定在if语句中，并使用where子句做布尔值判断。"></a>还可以包含多个可选绑定在if语句中，并使用where子句做布尔值判断。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">if let firstNumber = Int(&quot;4&quot;), secondNumber = Int(&quot;42&quot;) where firstNumber &lt; secondNumber &#123;</div><div class="line"></div><div class="line">    print(&quot;\(firstNumber) &lt; \(secondNumber)&quot;)</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="隐式解析可选类型"><a href="#隐式解析可选类型" class="headerlink" title="隐式解析可选类型"></a>隐式解析可选类型</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let possibleString: String? = &quot;一个可选String&quot;</div><div class="line">let forcedString: String = possibleString!//需要感叹号来获取值</div><div class="line"></div><div class="line">let assumedString: String! = &quot;一个隐式解析可选String&quot;;</div><div class="line">let implicitString: String = assumedString//不需要用感叹号来获取值</div></pre></td></tr></table></figure>
+<h4 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">func canThrowAnError() throws &#123;</div><div class="line">    print(&quot;可能会出现错误&quot;)</div><div class="line">&#125;</div><div class="line">do &#123;</div><div class="line">    try canThrowAnError()</div><div class="line">    //没有错误消息</div><div class="line">&#125;catch  &#123;</div><div class="line">    //有一个错误消息抛出</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Swift/" rel="tag">#Swift</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/14/别跟我只谈理想，不谈钱/" rel="next" title="别跟我只谈理想，不谈钱">
+                <i class="fa fa-chevron-left"></i> 别跟我只谈理想，不谈钱
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://avatars1.githubusercontent.com/u/14886634?v=3&s=460"
+               alt="Walker" />
+          <p class="site-author-name" itemprop="name">Walker</p>
+          <p class="site-description motion-element" itemprop="description">依然是一枚码畜，一心追求洁简之道😄</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">categories</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础部分"><span class="nav-number">1.</span> <span class="nav-text">基础部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#元组"><span class="nav-number">1.1.</span> <span class="nav-text">元组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#String转Int-并不是所有的String都能转Int"><span class="nav-number">1.2.</span> <span class="nav-text">String转Int(并不是所有的String都能转Int)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可选绑定"><span class="nav-number">1.3.</span> <span class="nav-text">可选绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#如果Int-possibleNum-返回的可选Int包含一个值，创建一个叫做actuaNumber的新常量并将可选包含的值赋给它，-如果转换成功，actuaNumber常量可以在if语句中的第一个分支中使用。它已经被可选类型包含的值初始化过，所以不需要！使用后缀来获取它的值。下面的例子里，actuaNumber只被用来输出转换结果"><span class="nav-number">1.3.1.</span> <span class="nav-text">如果Int(possibleNum)返回的可选Int包含一个值，创建一个叫做actuaNumber的新常量并将可选包含的值赋给它， 如果转换成功，actuaNumber常量可以在if语句中的第一个分支中使用。它已经被可选类型包含的值初始化过，所以不需要！使用后缀来获取它的值。下面的例子里，actuaNumber只被用来输出转换结果.</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#还可以包含多个可选绑定在if语句中，并使用where子句做布尔值判断。"><span class="nav-number">1.3.2.</span> <span class="nav-text">还可以包含多个可选绑定在if语句中，并使用where子句做布尔值判断。</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#隐式解析可选类型"><span class="nav-number">1.4.</span> <span class="nav-text">隐式解析可选类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#错误处理"><span class="nav-number">1.5.</span> <span class="nav-text">错误处理</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Walker</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
