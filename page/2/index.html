@@ -233,6 +233,186 @@
             
               
                 
+                <a class="post-title-link" href="/2016/08/08/Swift-分页控制/" itemprop="url">
+                  Swift:分页控制
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-08T10:17:35+08:00" content="2016-08-08">
+              2016-08-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Swift/" itemprop="url" rel="index">
+                    <span itemprop="name">Swift</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/08/Swift-分页控制/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/Swift-分页控制/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>最近公司的一个项目，有个页面是这么显示的：</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/b621e21bjw1f6gw2qvxkfg20db0khmyv.gif" alt="image"></p>
+<p>觉得好玩，现在用Swift实现一遍，刚开始学些Swift，代码质量捉急，见谅。。。</p>
+<p>首先，我们从上面的GIF可以看到，中间的位置不变，左右两边移动，不难看出这其中的规律。<br>我们不妨给出一个列表：</p>
+<table>
+<thead>
+<tr>
+<th>原位置</th>
+<th>赤</th>
+<th>橙</th>
+<th>黄</th>
+<th>绿</th>
+<th>青</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>点击第1个按钮</td>
+<td>绿</td>
+<td>青</td>
+<td>赤</td>
+<td>橙</td>
+<td>黄</td>
+</tr>
+<tr>
+<td>点击第2个按钮</td>
+<td>青</td>
+<td>赤</td>
+<td>橙</td>
+<td>黄</td>
+<td>绿</td>
+</tr>
+<tr>
+<td>点击第3个按钮</td>
+<td>赤</td>
+<td>橙</td>
+<td>黄</td>
+<td>绿</td>
+<td>青</td>
+</tr>
+<tr>
+<td>点击第4个按钮</td>
+<td>橙</td>
+<td>黄</td>
+<td>绿</td>
+<td>青</td>
+<td>赤</td>
+</tr>
+<tr>
+<td>点击第5个按钮</td>
+<td>黄</td>
+<td>绿</td>
+<td>青</td>
+<td>赤</td>
+<td>橙</td>
+</tr>
+</tbody>
+</table>
+<p>从上面的表格里，我们可以清楚地看到按钮移动规律（毕竟能力弱鸡，看没看懂，我也就到这儿了，衰~~~），最重要的是，每点击一次按钮都要记录每个按钮移动的位置，多的也不说，代码在这里：</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/08/08/Swift-分页控制/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-categories " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/08/07/我就是我的神/" itemprop="url">
                   我就是我的神
                 </a>
@@ -749,7 +929,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -757,7 +937,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
