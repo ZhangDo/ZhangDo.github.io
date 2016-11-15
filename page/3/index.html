@@ -233,6 +233,129 @@
             
               
                 
+                <a class="post-title-link" href="/2016/06/20/一个渣渣学习Swift（二）/" itemprop="url">
+                  一个渣渣学习Swift（二）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-20T09:59:29+08:00" content="2016-06-20">
+              2016-06-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Swift/" itemprop="url" rel="index">
+                    <span itemprop="name">Swift</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/20/一个渣渣学习Swift（二）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/20/一个渣渣学习Swift（二）/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="UICollectionView"><a href="#UICollectionView" class="headerlink" title="UICollectionView"></a>UICollectionView</h1><h5 id="当我们使用UICollectionView的大部分时候都需要去自定义Cell视图，刚开始我们先将简单的CollectionView展示出来-最简单的形式-，到后面我们再去进行Cell的自定义"><a href="#当我们使用UICollectionView的大部分时候都需要去自定义Cell视图，刚开始我们先将简单的CollectionView展示出来-最简单的形式-，到后面我们再去进行Cell的自定义" class="headerlink" title="当我们使用UICollectionView的大部分时候都需要去自定义Cell视图，刚开始我们先将简单的CollectionView展示出来(最简单的形式)，到后面我们再去进行Cell的自定义"></a>当我们使用UICollectionView的大部分时候都需要去自定义Cell视图，刚开始我们先将简单的CollectionView展示出来(最简单的形式)，到后面我们再去进行Cell的自定义</h5><h1 id="声明："><a href="#声明：" class="headerlink" title="声明："></a>声明：</h1><p>viewController中实现collectionView的三个协议<code>UICollectionViewDataSource</code> <code>UICollectionViewDelegate</code> <code>UICollectionViewDelegateFlowLayout</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">class CollectionVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout &#123;</div><div class="line">    let width = UIScreen.mainScreen().bounds.width</div><div class="line">    let height = UIScreen.mainScreen().bounds.height</div><div class="line">    let collectionIdentifier = &quot;CollectionCell&quot;</div><div class="line">    </div><div class="line">    </div><div class="line">    override func viewDidLoad() &#123;</div><div class="line">        super.viewDidLoad()</div><div class="line">        self.title = &quot;UICollection&quot;</div><div class="line">        self.view.backgroundColor = UIColor.whiteColor()</div><div class="line">        self.initUICollectionView()</div><div class="line">        // Do any additional setup after loading the view.</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/06/20/一个渣渣学习Swift（二）/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-categories " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/06/13/一个渣渣学习Swift（一）/" itemprop="url">
                   一个渣渣学习Swift（一）
                 </a>
@@ -379,7 +502,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
