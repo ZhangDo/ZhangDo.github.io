@@ -125,7 +125,7 @@
 
     <style>
         body{
-            background-color: #F5F5F5
+            background-color: #2B2A28
         }
 		
 		/* blog_info bottom background */
@@ -323,7 +323,7 @@
 				
 
                 <!-- Post Content -->
-                <div id="post-content" class="markdown-Material mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
 	
 		<h1 id="UICollectionView"><a href="#UICollectionView" class="headerlink" title="UICollectionView"></a>UICollectionView</h1><h5 id="当我们使用UICollectionView的大部分时候都需要去自定义Cell视图，刚开始我们先将简单的CollectionView展示出来-最简单的形式-，到后面我们再去进行Cell的自定义"><a href="#当我们使用UICollectionView的大部分时候都需要去自定义Cell视图，刚开始我们先将简单的CollectionView展示出来-最简单的形式-，到后面我们再去进行Cell的自定义" class="headerlink" title="当我们使用UICollectionView的大部分时候都需要去自定义Cell视图，刚开始我们先将简单的CollectionView展示出来(最简单的形式)，到后面我们再去进行Cell的自定义"></a>当我们使用UICollectionView的大部分时候都需要去自定义Cell视图，刚开始我们先将简单的CollectionView展示出来(最简单的形式)，到后面我们再去进行Cell的自定义</h5><h1 id="声明："><a href="#声明：" class="headerlink" title="声明："></a>声明：</h1><p>viewController中实现collectionView的三个协议<code>UICollectionViewDataSource</code> <code>UICollectionViewDelegate</code> <code>UICollectionViewDelegateFlowLayout</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">class CollectionVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout &#123;</div><div class="line">    let width = UIScreen.mainScreen().bounds.width</div><div class="line">    let height = UIScreen.mainScreen().bounds.height</div><div class="line">    let collectionIdentifier = &quot;CollectionCell&quot;</div><div class="line">    </div><div class="line">    </div><div class="line">    override func viewDidLoad() &#123;</div><div class="line">        super.viewDidLoad()</div><div class="line">        self.title = &quot;UICollection&quot;</div><div class="line">        self.view.backgroundColor = UIColor.whiteColor()</div><div class="line">        self.initUICollectionView()</div><div class="line">        // Do any additional setup after loading the view.</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
