@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Title -->
+    
+    <title>
+        mac/ios SpringBoard及BackgroundBoard函数 | Walker同学
+    </title>
+    
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+    
+    <!-- Meta & INfo -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Walker">
+    <meta name="description" content="“大圣，此去欲何？” “踏南天，碎凌霄。” “若一去不回……” “便一去不回！”">
+    <meta name="keywords" content="闲聊">
+    
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+    
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Walker同学">
+    
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://zhangdo.github.io">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="mac/ios SpringBoard及BackgroundBoard函数 | Walker同学">
+    <meta property="og:description" content="“大圣，此去欲何？” “踏南天，碎凌霄。” “若一去不回……” “便一去不回！”">
+    
+     <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+        
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+    
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+	body, html{
+		font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+	}
+	
+    a{
+        color: #00838F
+    }
+    
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important
+    }
+    
+	/* Sidebar User Drop Down Menu Text Color */
+	#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus{
+        color: #0097A7 !important
+    }
+    
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a{
+        color: #0097A7 !important
+    }
+    
+    .toTop{
+        background: #757575 !important
+    }
+		
+	.material-layout .material-post>.material-nav,
+	.material-layout .material-index>.material-nav,
+	.material-nav a{
+		color: #757575;
+	}
+		
+	#scheme-Paradox .MD-burger-layer {
+		background-color: #757575;
+	}
+
+	#scheme-Paradox #post-toc-trigger-btn{
+		color: #757575;
+	}
+	
+	.post-toc a:hover{
+		color: #00838F;
+		text-decoration: underline;
+	}
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body{
+            background-color: #2B2A28
+        }
+		
+		/* blog_info bottom background */
+        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+            background-color: #fff;
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+	<script src="/js/jquery.min.js"></script>
+	
+	<!-- UC Browser Compatible-->
+	<script>
+		var agent = navigator.userAgent.toLowerCase();
+		if(agent.indexOf('ucbrowser')>0) {
+			document.write('<link rel="stylesheet" href="/css/uc.css">');
+		   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+		}
+	</script>
+    
+    <!-- Custom Head -->
+    
+</head>
+	
+	
+
+    <body id="scheme-Paradox">
+
+		
+        <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+				
+			
+			
+            <!-- Main Container -->
+            <main class="material-layout__content" id="main">
+				
+                <!-- Top Anchor -->
+                <div id="top"></div>
+				
+				
+                <!-- Hamburger Button -->
+                <button class="MD-burger-icon sidebar-toggle">
+                    <span class="MD-burger-layer"></span>
+                </button>
+				
+				
+                
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
+
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
+			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mac-SpringBoardService函数："><span class="post-toc-number">1.</span> <span class="post-toc-text">Mac SpringBoardService函数：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mac-BackgoundBoard函数："><span class="post-toc-number">2.</span> <span class="post-toc-text">Mac BackgoundBoard函数：</span></a></li></ol>
+		
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
+	
+		
+			<!-- Random Thumbnail -->
+			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+				<script>
+    
+    var randomNum;
+    randomNum = Math.floor(Math.random() * 5 + 1);
+    
+    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')');
+    
+</script>
+
+		
+	
+        <p class="article-headline-p">
+            mac/ios SpringBoard及BackgroundBoard函数
+        </p>
+    </div>
+
+	
+
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Walker</strong>
+        <span>12月 05, 2016</span>
+    </div>
+    
+    <div class="section-spacer"></div>
+	
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+    
+    <!-- Tags (bookmark) -->
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    
+    
+    
+    
+    <!-- Share Twitter -->
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=mac/ios SpringBoard及BackgroundBoard函数&url=http://zhangdo.github.io//2016/12/05/mac-ios-SpringBoard及BackgroundBoard函数/index.html&via=Walker" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Twitter
+        </li>
+    </a>
+    
+    <!-- Share Google+ -->
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://zhangdo.github.io//2016/12/05/mac-ios-SpringBoard及BackgroundBoard函数/index.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+    <!-- Share Weibo -->
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=mac/ios SpringBoard及BackgroundBoard函数&url=http://zhangdo.github.io//2016/12/05/mac-ios-SpringBoard及BackgroundBoard函数/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+</ul>
+</div>
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<h2 id="Mac-SpringBoardService函数："><a href="#Mac-SpringBoardService函数：" class="headerlink" title="Mac SpringBoardService函数："></a>Mac SpringBoardService函数：</h2><ul>
+<li>SBAppWillOrderInContextForDisplay                           </li>
+<li>SBAppDidOrderOutContextForDisplay                           </li>
+<li>SBSaveHardwareSnapshot                                      </li>
+<li>SBSaveHardwareSnapshots                                     </li>
+<li>SBDeleteHardwareSnapshots                                   </li>
+<li>SBDisplayIdentifierForPID                                   </li>
+<li>SBApplicationDisplayIdentifiers                             </li>
+<li>SBFrontmostApplicationDisplayIdentifier                     </li>
+<li>SBBundlePathForDisplayIdentifier                            </li>
+<li>SBDataReset                                                 </li>
+<li>SBSuspend                                                   </li>
+<li>SBSuspendFrontmostApp                                       </li>
+<li>SBWorkspaceStatusBarStyleChanged                            </li>
+<li>SBWorkspaceStatusBarHiddenChanged                           </li>
+<li>SBWorkspaceStatusBarOrientationChangedWithDuration          </li>
+<li>SBRegisterStatusBarWindowContextId                          </li>
+<li>SBWorkspaceApplicationSetBackgroundStyle                    </li>
+<li>SBWorkspaceCarStatusBarChange                               </li>
+<li>SBCarTriggerUnhandledBackButtonAction                       </li>
+<li>SBSetSuspensionAnimationDelay                               </li>
+<li>SBGetSystemVolumeHUDEnabled                                 </li>
+<li>SBSetSystemVolumeHUDEnabled                                 </li>
+<li>SBGetInterfaceOrientation                                   </li>
+<li>SBOverrideDefaultInterfaceOrientation                       </li>
+<li>SBRemoveDefaultInterfaceOrientationOverride                 </li>
+<li>SBGetActiveApplicationStatusBarOrientation                  </li>
+<li>SBGetRingerSwitchState                                      </li>
+<li>SBSetExpectsFaceContact                                     </li>
+<li>SBSetExpectsFaceContactInLandscape                          </li>
+<li>SBGetBadgeNumber                                            </li>
+<li>SBSetBadgeNumber                                            </li>
+<li>SBSetBadgeString                                            </li>
+<li>SBReboot                                                    </li>
+<li>SBShutDown                                                  </li>
+<li>SBSetApplicationBadgeNumber                                 </li>
+<li>SBSetApplicationBadgeString                                 </li>
+<li>SBSetShowsProgress                                          </li>
+<li>SBSetApplicationShowsProgress                               </li>
+<li>SBSetAllApplicationsShowProgress                            </li>
+<li>SBSetAllApplicationsShowSyncIndicator                       </li>
+<li>SBSetWantsVolumeButtonEvents                                </li>
+<li>SBSetAccelerometerDeviceOrientationChangedEventsEnabled     </li>
+<li>SBSetAccelerometerRawEventsInterval                         </li>
+<li>SBSetProximityEventsEnabled                                 </li>
+<li>SBEnableLockScreenBundle                                    </li>
+<li>SBShowTTYPromptForNumber                                    </li>
+<li>SBWillDisplayMiniAlert                                      </li>
+<li>SBWillDismissMiniAlert                                      </li>
+<li>SBDidDismissMiniAlert                                       </li>
+<li>SBSetApplicationHasMiniAlerts                               </li>
+<li>SBGetScreenLockStatus                                       </li>
+<li>SBApplicationRequestedDeviceUnlock                          </li>
+<li>SBLockDevice                                                </li>
+<li>SBShowNetworkPromptsIfNecessary                             </li>
+<li>SBSetApplicationUsesBackgroundNetwork                       </li>
+<li>SBGetApplicationUsesBackgroundNetwork                       </li>
+<li>SBGetCurrentBacklightLevel                                  </li>
+<li>SBSetCurrentBacklightLevel                                  </li>
+<li>SBGetCurrentBacklightFactor                                 </li>
+<li>SBDimScreen                                                 </li>
+<li>SBGetBatteryAwakeTime                                       </li>
+<li>SBGetRecentSleepsWakes                                      </li>
+<li>SBGetScheduledPowerEvents                                   </li>
+<li>SBGetBatteryUsageTimesInSeconds                             </li>
+<li>SBGetCanAddIcons                                            </li>
+<li>SBAddWebClipToHomeScreen                                    </li>
+<li>SBRemoveWebClipFromHomeScreen                               </li>
+<li>SBReloadIconForIdentifier                                   </li>
+<li>SBHandleUpdatedNewsstandArtworkForIdentifier                </li>
+<li>SBAddDownloadingIconForDisplayIdentifier                    </li>
+<li>SBAddDownloadingIconForDisplayIdentifierWithSoftwareType    </li>
+<li>SBCancelDownloadingIconForDisplayIdentifier                 </li>
+<li>SBScrollToIconWithDisplayIdentifier                         </li>
+<li>SBGetNowPlayingAppBundleIdentifier                          </li>
+<li>SBSetNowPlayingInformation                                  </li>
+<li>SBSetApplicationNetworkFlags                                </li>
+<li>SBGetApplicationNetworkFlags                                </li>
+<li>SBSetApplicationIdleTimerDisabled                           </li>
+<li>SBSetApplicationIdleTimerDisabledForReason                  </li>
+<li>SBGetExternalAccessoryProtocolsForDisplayIdentifier         </li>
+<li>SBGetDisplayIdentifiersForExternalAccessoryProtocols        </li>
+<li>SBRegisterRemoteView                                        </li>
+<li>SBUnregisterRemoteView                                      </li>
+<li>SBPresentSheetView                                          </li>
+<li>SBDismissSheetView                                          </li>
+<li>SBSetDisableNowPlayingHUD                                   </li>
+<li>SBGetShowingMediaControls                                   </li>
+<li>SBGetShowingMediaHUDAlert                                   </li>
+<li>SBStatusBarOperatorName                                     </li>
+<li>SBAcquireApplicationTerminationAssertion                    </li>
+<li>SBAppSwitcherServiceRegister                                </li>
+<li>SBSetApplicationNextWakeDate                                </li>
+<li>SBSetZoomTouchEnabled                                       </li>
+<li>SBSetVoiceControlEnabled                                    </li>
+<li>SBSetInterceptsMenuButton                                   </li>
+<li>SBLastRemoteNotificationRecipientBundleIdentifier           </li>
+<li>SBReloadApplication                                         </li>
+<li>SBGetMediaVolume                                            </li>
+<li>SBSetMediaVolume                                            </li>
+<li>SBGetIconState                                              </li>
+<li>SBGetPendingIconState                                       </li>
+<li>SBGetFlattenedIconState                                     </li>
+<li>SBSetIconState                                              </li>
+<li>SBSetHWKeyboardLayoutName                                   </li>
+<li>SBFlashColor                                                </li>
+<li>SBGetPendingLocalNotification                               </li>
+<li>SBScheduleLocalNotifications                                </li>
+<li>SBScheduleLocalNotificationsBlocking                        </li>
+<li>SBGetAllScheduledLocalNotification                          </li>
+<li>SBCheckInTaskPort                                           </li>
+<li>SBAppSetOrderOutPendingForDisplay                           </li>
+<li>SBProgrammaticSwitchAppGestureMoveToLeft                    </li>
+<li>SBProgrammaticSwitchAppGestureMoveToRight                   </li>
+<li>SBOpenNewsstand                                             </li>
+<li>SBSetVoiceRecognitionAudioInputPaths                        </li>
+<li>SBSetAssistantRecognitionStrings                            </li>
+<li>SBSetAlertSuppressionContexts                               </li>
+<li>SBSetAppIsConnectedToEA                                     </li>
+<li>SBShowEmergencyDialer                                       </li>
+<li>SBReturnToPreviousAppAtSpecifiedTime                        </li>
+<li>SBGetCurrentHomeScreenImage                                 </li>
+<li>SBGetCurrentLockScreenImage                                 </li>
+<li>SBHasPendingOrVisibleAlerts                                 </li>
+<li>SBLockDeviceAndFeatures                                     </li>
+<li>SBAddThermalWarningSuppressionAssertion                     </li>
+<li>SBActivateAssistantWithContext                              </li>
+<li>SBDeactivateAssistant                                       </li>
+<li>SBPresentRemoteAlert                                        </li>
+<li>SBGetApplicationCanAccessDisplay                            </li>
+<li>SBGetApplicationCanAccessDisplayWithSeed                    </li>
+<li>SBAppSetMinimumBackgroundFetchInterval                      </li>
+<li>SBSetProceduralWallpaper                                    </li>
+<li>SBSetWallpaperImageForLocations                             </li>
+<li>SBSetWallpaperImageSurfaceForLocations                      </li>
+<li>SBGetWallpaperOptions                                       </li>
+<li>SBAddAlertItemsSuppressionAssertion                         </li>
+<li>SBSetControlCenterActivationOptions                         </li>
+<li>SBSetAmbiguousControlCenterActivationMargin                 </li>
+<li>SBFScreenTimeRegisterForExternalChangeNotification         </li>
+<li>SBFScreenTimePostExternalChangeNotification                </li>
+<li>SBFScreenTimeNameForCategory                               </li>
+<li>SBSCopyDisplayIdentifierForProcessID                        </li>
+<li>SBSCopyDisplayIdentifiersForProcessID                       </li>
+<li>SBSCopyBundleInfoValueForKeyAndProcessID                    </li>
+<li>SBSSuspendFrontmostApplication                              </li>
+<li>SBSCopyApplicationDisplayIdentifiers                        </li>
+<li>SBSCopyFrontmostApplicationDisplayIdentifier                </li>
+<li>SBSCopyBundlePathForDisplayIdentifier                       </li>
+<li>SBSCopyIconImagePNGDataForDisplayIdentifier                 </li>
+<li>SBSCopyExecutablePathForDisplayIdentifier                   </li>
+<li>SBSCopyIconImagePathForDisplayIdentifier                    </li>
+<li>SBSCopyLocalizedApplicationNameForDisplayIdentifier         </li>
+<li>SBSApplicationLaunchingErrorString                          </li>
+<li>SBSApplicationCanBeLaunched                                 </li>
+<li>SBSLaunchApplicationWithIdentifier                          </li>
+<li>SBSLaunchApplicationWithIdentifierAndURLAndLaunchOptions    </li>
+<li>SBSLaunchApplicationWithIdentifierAndURL                    </li>
+<li>SBSLaunchApplicationWithIdentifierAndLaunchOptions          </li>
+<li>SBSLaunchApplicationFromURLRequest                          </li>
+<li>SBSCleanupClientEntitlementEnforcementPort                  </li>
+<li>SBSCreateClientEntitlementEnforcementPort                   </li>
+<li>SBSLaunchApplicationForDebugging                            </li>
+<li>SBSLaunchApplicationForDebuggingWithOptions                 </li>
+<li>SBSOpenSensitiveURL                                         </li>
+<li>SBSOpenSensitiveURLAndUnlock                                </li>
+<li>SBSOpenDataActivationURL                                    </li>
+<li>SBSProcessIDForDisplayIdentifier                            </li>
+<li>SBSServerPortHelper                                         </li>
+<li>SBSSpringBoardServerPort                                    </li>
+<li>SBSSpringBoardBlockableServerPort                           </li>
+<li>SBSSpringBoardBackgroundServerPort                          </li>
+<li>SBSSpringBoardIconGenerationServerPort                      </li>
+<li>SBSWatchdogAssertionGetTypeID                               </li>
+<li>SBSWatchdogAssertionCreateForPID                            </li>
+<li>SBSWatchdogAssertionCancel                                  </li>
+<li>SBSWatchdogAssertionGetRenewalInterval                      </li>
+<li>SBSWatchdogAssertionRenew                                   </li>
+<li>SBRNRegister                                                </li>
+<li>SBRNGetEnabledRemoteNotificationTypes                       </li>
+<li>SBRNGetMessage                                              </li>
+<li>SBRNGetMessageForToken                                      </li>
+<li>SBRNGetSystemWideEnabled                                    </li>
+<li>SBRNSetSystemWideEnabled                                    </li>
+<li>SBRNHasRegisteredBundleIdentifiers                          </li>
+<li>SBRNGetRegisteredBundleIdentifiersToTypes                   </li>
+<li>SBRNSetSettingsEnabledBundleIdentifierTypes                 </li>
+<li>SBRNGetNotificationsForBundleID                             </li>
+<li>SBRNGetBundleIDsUpdatedAfter                                </li>
+<li>SBRNGetNotificationEnabledBundleIDs                         </li>
+<li>SBRNGetEffectivePushSettingsForBundleID                     </li>
+<li>SBRNSetEffectivePushSettingsForBundleID                     </li>
+<li>SBSCopyExternalAccessoryProtocolsForDisplayIdentifier       </li>
+<li>SBSCopyDisplayIdentifiersForExternalAccessoryProtocol       </li>
+<li>SBSCopyNowPlayingAppBundleIdentifier                        </li>
+<li>SBSSetNowRecordingPid                                       </li>
+<li>SBSGetNowRecordingPid                                       </li>
+<li>SBSIsSystemApplication                                      </li>
+<li>SBSIsSystemApplicationPID                                   </li>
+<li>SBSCreateCompassCalibrationHUDAssertion                     </li>
+<li>SBSGetBackgroundTimeRemaining                               </li>
+<li>SBSSetInterceptsMenuButton                                  </li>
+<li>SBSSetInterceptsMenuButtonForever                           </li>
+<li>SBSOpenNewsstand                                            </li>
+<li>SBSHandleUpdatedNewsstandArtworkForBundleID                 </li>
+<li>SBSShouldShowNewsstandSettings                              </li>
+<li>SBSCopyNewsstandApplications                                </li>
+<li>SBSCopyNewsstandPushApplications                            </li>
+<li>SBSSetVoiceRecognitionAudioInputPaths                       </li>
+<li>SBSSetAssistantRecognitionStrings                           </li>
+<li>SBSShowEmergencyDialer                                      </li>
+<li>SBSUndimScreen                                              </li>
+<li>SBSLockDevice                                               </li>
+<li>SBSShutDown                                                 </li>
+<li>SBSGetSideSwitchPreference                                  </li>
+<li>SBSSetSideSwitchPreference                                  </li>
+<li>SBSWhitelistedUnarchiveFromDataWithAllowedClasses          </li>
+<li>SBSLocalNotificationWhitelistedUnarchiveFromData            </li>
+<li>SBSRemoteNotificationWhitelistedUnarchiveFromData           </li>
+<li>SBSActivateAssistant                                        </li>
+<li>SBSActivateAssistantWithContext                             </li>
+<li>SBSDeactivateAssistant                                      </li>
+<li>SBSDeactivateAssistantBySlidingOverTopAppAnimation          </li>
+<li>SBSSetTypingActive                                          </li>
+<li>SBGetIsAlive                                                </li>
+<li>SBApplicationStateGetMonitor                               </li>
+<li>SBApplicationStateBeginGeneratingChangeNotifications        </li>
+<li>SBApplicationStateEndGeneratingChangeNotifications          </li>
+<li>SBSGetApplicationState                                      </li>
+<li>SBSGetMostElevatedApplicationStateForProcessID              </li>
+<li>SBSCopyInfoForApplicationWithProcessID                      </li>
+<li>SBApplicationStateGetDescription                            </li>
+<li>SBSProcessAssertionGetNameForReason                         </li>
+<li>SBSProcessAssertionGetTypeID                                </li>
+<li>SBSProcessAssertionCreateForPID                             </li>
+<li>SBSProcessAssertionSetFlags                                 </li>
+<li>SBSProcessAssertionSetInvalidationCallBack                  </li>
+<li>SBSProcessAssertionIsValid                                  </li>
+<li>SBSProcessAssertionGetIdentifier                            </li>
+<li>SBDisplayIdentifiersForPID                                  </li>
+<li>SBGetDisplayIdentifiers                                     </li>
+<li>SBNewsstandApplicationDisplayIdentifiers                    </li>
+<li>SBIsSystemApplication                                       </li>
+<li>SBIsSystemApplicationPID                                    </li>
+<li>SBGetBackgroundTimeRemaining                                </li>
+<li>SBLocalizedApplicationNameForDisplayIdentifier              </li>
+<li>SBSetTypingActive                                           </li>
+<li>SBSSetNowPlayingHUDDisabled                                 </li>
+<li>SBSAreMediaControlsShowing                                  </li>
+<li>SBSIsMediaHUDAlertShowing                                   </li>
+<li>SBSCopyStatusBarOperatorName                                </li>
+<li>SBSSetStatusBarShowsActivity                                </li>
+<li>SBSSetStatusBarShowsActivityForApplication                  </li>
+<li>SBSSetAllApplicationsShowProgress                           </li>
+<li>SBSSetStatusBarShowsSyncActivity                            </li>
+<li>SBSAlertItemsSuppressionAssertionGetTypeID                  </li>
+<li>SBSAlertItemsSuppressionAssertionCreate                     </li>
+<li>SBGetIconPNGData                                            </li>
+<li>SBSApplicationTerminationAssertionGetTypeID                 </li>
+<li>SBSApplicationTerminationAssertionCreate                    </li>
+<li>SBSApplicationTerminationAssertionCreateWithError           </li>
+<li>SBSApplicationTerminationAssertionGetDisplayIdentifier      </li>
+<li>SBSApplicationTerminationAssertionGetIsValid                </li>
+<li>SBSApplicationTerminationAssertionInvalidate                </li>
+<li>SBSApplicationTerminationAssertionErrorString               </li>
+<li>SBSRestartLock                                             </li>
+<li>SBSRestartUnlock                                           </li>
+<li>SBSRestartGetInfoForIdentifier                             </li>
+<li>SBSRestartSetInfoForIdentifier                             </li>
+<li>SBSRestartScheduleBlockForIdentifier                       </li>
+<li>SBSSetAlertSuppressionContexts                              </li>
+<li>BKAccelerometer_server_routine                              </li>
+<li>BKAccelerometer_server                                      </li>
+<li>SBSEventObserverInitialize                                  </li>
+<li>SBSEventObserverStartObservingEvent                         </li>
+<li>SBSEventObserverGetDarwinNotificationFromEvent            </li>
+<li>SBSEventObserverStopObservingEvent                          </li>
+<li>SBSEventObserverStopObservingAllEvents                      </li>
+<li>SBSEventObserverGetValueForState                            </li>
+<li>SBSUIAppStatusBarStyleChanged                               </li>
+<li>SBSUIAppStatusBarTintColorChanged                           </li>
+<li>SBSUIAppStatusBarHiddenChanged                              </li>
+<li>SBSUIAppCarStatusBarChange                                  </li>
+<li>SBSUIAppStarkStatusBarChange                                </li>
+<li>SBSUIAppStatusBarOrientationChangedWithDuration             </li>
+<li>SBSUIAppRegisterStatusBarWindowContextId                    </li>
+<li>SBSUIAppSetBackgroundStyle                                  </li>
+<li>SBSUIAppSetBackgroundStyleWithAnimationAttributes           </li>
+<li>SBSUIAppCarTriggerUnhandledBackButtonAction                 </li>
+<li>SBSUIAppStarkTriggerUnhandledBackButtonAction               </li>
+<li>SBSUIBuildSnapshotContext                                   </li>
+<li>SBSUIAppSaveHardwareSnapshots                               </li>
+<li>SBSUIAppDeleteHardwareSnapshots                             </li>
+<li>SBSUIAppSaveHardwareSnapshot                                </li>
+<li>SBSUIAppWillOrderInContextForDisplay                        </li>
+<li>SBSUIAppDidOrderOutContextForDisplay                        </li>
+<li>SBSUIAppSetOrderOutPendingForDisplay                        </li>
+<li>SBSUIAppCanAccessDisplay                                    </li>
+<li>SBSUIAppCanAccessDisplayWithSeed                            </li>
+<li>SBSUIAppSuspendAndReturnToLastApp                           </li>
+<li>SBSUIAppSetMinimimumBackgroundFetchInterval                 </li>
+<li>SBSUIAppSetControlCenterActivationOptions                   </li>
+<li>SBSUIAppSetAmbiguousControlCenterActivationMargin           </li>
+<li>SBSAppSwitcherServiceRegistrationGetTypeID                  </li>
+<li>SBSAppSwitcherServiceRegister                               </li>
+<li>SBSAppSwitcherServiceRegistrationGetBundleID                </li>
+<li>SBSAppSwitcherServiceRegistrationGetIsValid                 </li>
+<li>SBSAppSwitcherServiceRegistrationGetViewControllerClassName </li>
+<li>SBSThermalWarningAssertionGetTypeID                         </li>
+<li>SBSThermalWarningAssertionCreateForBundleID                 </li>
+<li>SBSCopyDisplayIdentifiers                                   </li>
+<li>SBSRegisterDisplayIdentifiersChangedBlock                   </li>
+<li>SBSUIStarkActivateRemoteAlert                               </li>
+<li>SBSUIActivateRemoteAlert                                    </li>
+<li>SBScreenTimeTrackingChangedNotification                     </li>
+<li>SBScreenTimeCategoryKey                                     </li>
+<li>SBSApplicationLaunchOptionLaunchSuspendedKey                </li>
+<li>SBSApplicationLaunchOptionLaunchInClassicModeKey            </li>
+<li>SBSApplicationLaunchOptionUnlockDeviceKey                   </li>
+<li>SBSApplicationLaunchOptionPromptUnlockKey                   </li>
+<li>SBSApplicationLaunchFromURLOptionUnlockDeviceKey            </li>
+<li>SBSApplicationLaunchOptionRevealIconKey                     </li>
+<li>SBUserNotificationTextAutocapitalizationType                </li>
+<li>SBUserNotificationTextAutocorrectionType                    </li>
+<li>SBUserNotificationTextFieldButtonImagePath                  </li>
+<li>SBUserNotificationTextFieldButtonDisplayTitle               </li>
+<li>SBUserNotificationTextFieldButtonDisplayDefaultButtonTitle  </li>
+<li>SBUserNotificationTextFieldButtonDisplayDefaultButtonURL    </li>
+<li>SBUserNotificationHideButtonsInAwayView                     </li>
+<li>SBUserNotificationDisplayActionButtonOnLockScreen           </li>
+<li>SBUserNotificationDismissOnLock                             </li>
+<li>SBUserNotificationDontDismissOnUnlock                       </li>
+<li>SBUserNotificationAllowMenuButtonDismissal                  </li>
+<li>SBUserNotificationOneButtonPerLine                          </li>
+<li>SBUserNotificationGroupsTextFields                          </li>
+<li>SBUserNotificationDefaultButtonTag                          </li>
+<li>SBUserNotificationDefaultResponseLaunchBundleID             </li>
+<li>SBUserNotificationAlertMessageDelimiterKey                  </li>
+<li>SBUserNotificationSoundAVControllerAttributesDictionaryKey  </li>
+<li>SBUserNotificationSoundAVItemAttributesDictionaryKey        </li>
+<li>SBUserNotificationSoundRepeatDurationKey                    </li>
+<li>SBUserNotificationButtonTagForUnlockActionKey               </li>
+<li>SBUserNotificationAllowInSetupKey                           </li>
+<li>SBUserNotificationPendInSetupIfNotAllowedKey                </li>
+<li>SBUserNotificationPendWhileKeyBagLockedKey                  </li>
+<li>SBUserNotificationAllowedApplicationsKey                    </li>
+<li>SBUserNotificationAllowInCarKey                             </li>
+<li>SBUserNotificationAllowInStarkKey                           </li>
+<li>SBUserNotificationBehavesSuperModally                       </li>
+<li>SBUserNotificationForcesModalAlertAppearance                </li>
+<li>SBUserNotificationUsesUndoStyle                             </li>
+<li>SBUserNotificationSystemSoundIDKey                          </li>
+<li>SBUserNotificationSystemSoundBehaviorKey                    </li>
+<li>SBUserNotificationSoundVibrationPatternKey                  </li>
+<li>SBSAppSwitcherQuitAppNotification                           </li>
+<li>SBSAssistantActivationContextBundleIDKey                    </li>
+<li>SBApplicationNotificationStateChanged                       </li>
+<li>SBApplicationStateKey                                       </li>
+<li>SBApplicationMostElevatedStateForProcessIDKey               </li>
+<li>SBApplicationStateDisplayIDKey                              </li>
+<li>SBApplicationStateProcessIDKey                              </li>
+<li>SBApplicationStateRunningReasonsKey                         </li>
+<li>SBApplicationStateRunningReasonAssertionIdentifierKey       </li>
+<li>SBApplicationStateRunningReasonAssertionReasonKey           </li>
+<li>kSBSAlertNotificationCenterName                             </li>
+<li>kSBSAlertPresentedNotificationName                          </li>
+<li>kSBSAlertNotificationType                                   </li>
+<li>kSBSAlertNotificationSender                                 </li>
+<li>kSBSAlertNotificationDate                                   </li>
+<li>SBSNotificationCenterTodaySectionIdentifier                 </li>
+<li>SBSNotificationCenterTomorrowSectionIdentifier              </li>
+<li>kSBSLockStateNotifyKey                                      </li>
+<li>BKXXBKAccelerometer_subsystem                              </li>
+<li>kSBSCardItemIdentifierKey                                   </li>
+<li>kSBSCardItemIconDataKey                                     </li>
+<li>kSBSCardItemTitleKey                                        </li>
+<li>kSBSCardItemBodyKey                                         </li>
+<li>kSBSCardItemRequiresPasscodeKey                             </li>
+<li>kSBSCardItemBundleName                                      </li>
+<li>kSBSCardItemAttachmentDataName                              </li>
+<li>kSBSCardItemUserInfoKey                                     </li>
+<li>SBSEventObserverEventDimmed                                 </li>
+<li>SBSEventObserverEventUndimmed                               </li>
+<li>SBSEventObserverEventSignificantTimeChange                  </li>
+<li>SBSEventObserverEventUnlocked                               </li>
+<li>SBSEventObserverStateDimmedForLock                          </li>
+<li>SBSUISnapshotContextOptionDisplayId                         </li>
+<li>SBSUISnapshotContextOptionFrame                             </li>
+<li>SBSUISnapshotContextOptionName                              </li>
+<li>SBSUISnapshotContextOptionScale                             </li>
+<li>SBSUIStarkRemoteAlertServiceViewControllerClass             </li>
+<li>SBSUIRemoteAlertOptionStark                                 </li>
+<li>SBSUIRemoteAlertOptionViewControllerClass                   </li>
+<li>SBSUIRemoteAlertOptionImpersonatesApplicationBundleID       </li>
+<li>SBSUIRemoteAlertOptionDismissWithHomeButton                 </li>
+<li>SBSUIRemoteAlertOptionCarDisplay                            </li>
+</ul>
+<h2 id="Mac-BackgoundBoard函数："><a href="#Mac-BackgoundBoard函数：" class="headerlink" title="Mac BackgoundBoard函数："></a>Mac BackgoundBoard函数：</h2><p>BKSAuditTokenFromMachMessage<br>BKSCopyValueForEntitlement<br>BKSAuditTokenTaskHasEntitlement<br>BKSBundleIDForAuditToken<br>BKSBundleIDForPID<br>BKSHIDSetBacklightFactorPending<br>BKSHIDSetBacklightFactorWithFadeDuration<br>BKSHIDSetMinimumBrightnessLevelWithFadeDuration<br>BKSHIDGetDeviceBacklightArchitectureVersion<br>BKSHIDAmbientLightSensorExists<br>BKSHIDAmbientLightSensorDisableAutoBrightness<br>BKSHIDAmbientLightSensorEnableAutoBrightness<br>BKSHIDSetDeviceInterfaceOrientation<br>BKSHIDRequestProximityDetectionMode<br>BKSHIDResetProximityCalibration<br>BKSHIDGetObjectWithinProximity<br>BKSHIDSetProximityEventsClient<br>BKSHIDGetProximityDetectionActive<br>BKSHIDSetHIDUILockedState<br>BKSHIDSetPocketTouchesExpected<br>BKSHIDGetRingerState<br>BKSHIDIsSmartCoverClosed<br>BKSHIDCancelPhysicalButtonEvents<br>BKSHIDSetHardwareKeyboardLayoutName<br>BKSHIDSetEventFocusDeferralsForClient<br>BKSHIDSystemAppControlsFocusOnMainDisplay<br>BKSHIDCancelTouchesOnDisplay<br>BKSHIDCancelTouchesOnAllDisplays<br>BKSHIDSystemGesturesNoLongerPossible<br>BKSHIDSystemGestureIsStealingEvents<br>BKSHIDResetUserEventTimer<br>BKSHIDNotifyOnNextUserEvent<br>BKSHIDSafeToResetIdleTimer<br>BKSHIDGetNonFlatDeviceOrientation<br>BKSHIDSetOrientationClientAndSamplingInterval<br>BKSHIDLockOrientation<br>BKSHIDUnlockOrientation<br>BKSHIDIsOrientationLockedWithOrientation<br>BKSHIDSetAccelerometerClientEventsEnabled<br>BKSHIDGetCurrentDisplayBrightness<br>BKSHIDBeginDisplayBrightnessTransaction<br>BKSHIDSetDisplayBrightnessWithImplicitTransaction<br>BKSHIDSetDisplayBrightnessValue<br>BKSHIDFlushDisplayBrightnessUpdates<br>BKSHIDRestoreSystemDisplayBrightness<br>BKSHIDSetAutoDisplayBrightnessEnabled<br>BKSHIDIsCapsLockLightOn<br>BKSDisplayStart<br>BKSDisplaySetScreenBlanked<br>BKSDisplayWillUnblank<br>BKSDisplayGetMainScreenInfo<br>BKSDisplaySetCloneRotationDisabled<br>BKSDisplayDisplayIsTethered<br>BKSDisplayTetherPrefsNeedImmediateUpdate<br>BKSDisplaySetTetheredOrientationNotificationsDisabled<br>BKSDisplayUpdateTetheredDisplayOrientationIfNecessaryWithInterfaceOrientation<br>BKSDisplayUpdateMirroredDisplayOrientationWithInterfaceOrientation<br>BKSDisplaySetRefreshRateSettings<br>BKSDisplayDrawPersistentScreenSnapshot<br>BKSDisplayTearDownPersistentScreenSnapshot<br>BKSHIDServicesServerPort<br>BKSDisplayServicesServerPort<br>BKSWatchdogServerPort<br>BKSCheckInServerPort<br>BKSAppWatchdogServerPort<br>BKSHIDServicesSetBacklightFactorPending<br>BKSHIDServicesSetBacklightFactorWithFadeDuration<br>BKSHIDServicesSetMinimumBrightnessLevelWithFadeDuration<br>BKSHIDServicesGetDeviceBacklightArchitectureVersion<br>BKSHIDServicesAmbientLightSensorExists<br>BKSHIDServicesAmbientLightSensorEnableAutoBrightness<br>BKSHIDServicesAmbientLightSensorDisableAutoBrightness<br>BKSHIDServicesRequestProximityDetectionMode<br>BKSHIDServicesSetProximityEventsClient<br>BKSHIDServicesResetProximityCalibration<br>BKSHIDServicesSetHIDUILockedState<br>BKSHIDServicesSetPocketTouchesExpected<br>BKSHIDServicesGetObjectWithinProximity<br>BKSHIDServicesProximityDetectionActive<br>BKSHIDServicesSetHardwareKeyboardLayoutName<br>BKSHIDServicesRequestHardwareKeyboardEvents<br>BKSHIDServicesIsCapsLockLightOn<br>BKSHIDServicesGetRingerState<br>BKSHIDServicesIsSmartCoverClosed<br>BKHIDServicesCancelPhysicalButtonEvents<br>BKSHIDServicesSystemGesturesNoLongerPossible<br>BKSHIDServicesSystemGestureIsStealingEvents<br>BKSHIDServicesCancelTouchesOnMainDisplay<br>BKSHIDServicesCancelTouchesOnDisplay<br>BKSHIDServicesCancelTouchesOnAllDisplays<br>BKSHIDServicesResetUserEventTimer<br>BKSHIDServicesNotifyOnNextUserEvent<br>BKSHIDServicesSafeToResetIdleTimer<br>BKHIDServicesGetNonFlatDeviceOrientation<br>BKSHIDServicesSetOrientationClientAndSamplingInterval<br>BKSHIDServicesLockOrientation<br>BKSHIDServicesUnlockOrientation<br>BKSHIDServicesIsOrientationLockedWithOrientation<br>BKSHIDServicesSetDeviceInterfaceOrientation<br>BKSHIDServicesSetAccelerometerClientEventsEnabled<br>BKSDisplayServicesStart<br>BKSDisplayServicesGetMainScreenInfo<br>BKSDisplayServicesSetScreenBlanked<br>BKSDisplayServicesWillUnblank<br>BKSDisplayServicesSetCloneRotationDisabled<br>BKSDisplayServicesDisplayIsTethered<br>BKSDisplayServicesTetherPrefsNeedImmediateUpdate<br>BKSDisplayServicesSetTetheredOrientationNotificationsDisabled<br>BKSDisplayServicesUpdateTetheredDisplayOrientationIfNecessaryWithInterfaceOrientation<br>BKSDisplayServicesUpdateMirroredDisplayOrientationWithInterfaceOrientation<br>BKSDisplayServicesGetTVSignalTypeIsDigital<br>BKSDisplayServicesCopyVideoOutSettingForKey<br>BKSDisplayServicesSetRefreshRateSettings<br>BKSDisplayServicesDrawPersistentScreenSnapshot<br>BKSDisplayServicesTearDownPersistentScreenSnapshot<br>BKAccelerometer_server_routine<br>BKAccelerometer_server<br>BKCreateMIGServerSource<br>BKCreateMIGServerSourceWithContext<br>BKGetMachPortForMIGServerSource<br>BKGetContextForCalloutCurrentMIGServerSource<br>BKXXDeliverAccelerometerEvent<br>BKSDisplayBrightnessTransactionGetTypeID<br>BKSDisplayBrightnessTransactionCreate<br>BKSDisplayBrightnessSet<br>BKSDisplayBrightnessSetWithImplicitTransaction<br>BKSDisplayBrightnessGetCurrent<br>BKSDisplayBrightnessRestoreSystemBrightness<br>BKSDisplayBrightnessSetAutoBrightnessEnabled<br>BKSTerminateApplicationForReasonAndReportWithDescription<br>BKSTerminateApplicationGroupForReasonAndReportWithDescription<br>BKSApplicationTerminationReasonDescription<br>BKSApplicationTerminationReasonIsGraceful   </p>
+
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+    <!-- 使用多说评论 -->
+    <link rel="stylesheet" href="/css/duoshuo.min.css">
+<style>
+    #ds-thread #ds-reset .ds-post-button{
+        background-color: #0097A7 !important;
+    }
+    #ds-wrapper #ds-reset .ds-icons-32{
+        background-color: #0097A7 !important;
+    }
+    #ds-reset .ds-highlight {
+        color: #0097A7 !important;
+    }
+</style>
+<div id="comments">
+    <!-- 多说评论框 start -->
+        <div class="ds-thread" 
+            data-thread-key="2016/12/05/mac-ios-SpringBoard及BackgroundBoard函数/" 
+            data-url="http://zhangdo.github.io//2016/12/05/mac-ios-SpringBoard及BackgroundBoard函数/index.html"
+            data-title="mac/ios SpringBoard及BackgroundBoard函数"></div>
+    <!-- 多说评论框 end -->
+</div>
+
+
+
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/11/15/这是这个世界本来的面目/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
+
+				
+				
+					<!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay "></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored  sidebar-fixed-left" role="navigation">
+	<div id="sidebar-main">
+	    <!-- Sidebar Header -->
+		<div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+    <i class="material-icons">clear_all</i>
+    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Walker's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        dark_horse8023@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+		<!-- Sidebar Navigation  -->
+		<ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+			
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+						<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    <li id="sidebar-first-li">
+        <a href="/" target="_self">
+            <i class="material-icons sidebar-material-icons">home</i>
+             主页
+        </a>
+    </li>
+
+    <!-- I'm Feeling Lucky -->
+<!--
+    <li class="dropdown">
+        <a href="" target="_self">
+            <i class="material-icons sidebar-material-icons">explore</i>
+             sidebar.imlucky
+        </a>
+    </li>
+-->
+
+	
+    <!-- Archives  -->
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">inbox</i>
+             归档
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            <a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/10/">十月 2016<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/06/">六月 2016<span class="sidebar_archives-count">2</span></a>
+        </ul>
+    </li>
+
+    <!-- Divider -->
+    <li class="divider"></li>
+
+
+    <!-- Pages  -->
+	
+		<li>
+			<a href="/guestbook" title="guestbook">
+				guestbook
+			</a>
+		</li>
+	
+
+    <!-- Article Numebr  -->
+    <li>
+        <a href="/archives">
+             文章总数
+             <span class="sidebar-badge">23</span>
+        </a>
+    </li>
+</ul>
+
+		<!-- Sidebar Divider -->
+		<div class="sidebar-divider"></div>
+
+		<!-- Sidebar Footer -->
+		<!-- 
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持。 :) 
+-->
+
+<!-- Theme Material -->
+<a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+	<div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		主题 - Material
+		<span class="sidebar-badge badge-circle">i</span>
+	</div>
+</a>
+
+<!-- Help & Support -->
+<!--
+<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		sidebar.help
+		<span class="mdl-button__ripple-container">
+			<span class="mdl-ripple"></span>
+		</span>
+	</div>
+</a>
+-->
+
+<!-- Feedback -->
+<!--
+<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.feedback
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>
+-->
+
+<!-- Abount Theme -->
+<!--
+<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.about_theme
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>-->
+
+	</div>
+    
+    <!-- Sidebar Sponsor -->
+    
+
+
+</aside>
+
+				
+				
+				
+					<!-- Footer Top Button -->
+					<div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+				
+				
+				<!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+	
+	
+		<!-- Paradox Footer Left Section -->
+		<div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+    <a href="https://twitter.com/horse8023" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.png);">
+        <span class="visuallyhidden">Twitter</span>
+    </button></a>
+    
+    
+    <!-- Facebook -->
+    
+    <a href="https://www.facebook.com/facebook" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.png);">
+        <span class="visuallyhidden">Facebook</span>
+    </button></a>
+    
+    
+    <!-- Google + -->
+    
+    <a href="https://www.google.com/" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.png);">
+        <span class="visuallyhidden">Google Plus</span>
+    </button></a>
+    
+    
+    <!-- Weibo -->
+    
+    <a href="http://weibo.com/u/3055673883?refer_flag=1001030101_&amp;is_all=1" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-weibo.png);">
+        <span class="visuallyhidden">Weibo</span>
+    </button></a>
+    
+    
+    <!-- Instagram -->
+    
+    
+    
+    <!-- Tumblr -->
+    
+    
+    
+    <!-- Github -->
+    
+    <a href="https://github.com/ZhangDo" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.png);">
+        <span class="visuallyhidden">Github</span>
+    </button></a>
+    
+</div>
+
+
+		<!--Copyright-->
+		<div id="copyright">Copyright&nbsp;©&nbsp;<script type="text/javascript">var fd = new Date();document.write(fd.getFullYear());</script>&nbsp;Walker同学</div>
+
+		<!-- Paradox Footer Right Section -->
+
+		<!-- 
+		I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+		It will not impact the appearance and can give developers a lot of support :)
+
+		很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+		它不会影响美观并可以给开发者很大的支持。 :) 
+		-->
+
+		<div class="mdl-mini-footer--right-section">
+			<div>
+				<div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+				<div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+			</div>
+		</div>
+	
+    
+</footer>
+                
+				<!-- Import File -->
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    
+    $('#nprogress .bar').css({
+        'background': '#FF4081'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4081',
+        'border-left-color': '#FF4081'
+    });
+    
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+    <!-- 多说公共 js 代码 start -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"walkertx"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = 'https://static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共 js 代码 end -->
+
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    // Post_Toc parent position fixed
+    $(window).load(function() {
+        $(".post-toc-wrap").parent(".mdl-menu__container").css("position", "fixed");
+    });
+</script>
+            </main>
+        </div>
+		
+    </body>
+		
+	
+</html>
