@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Title -->
+    
+    <title>
+        Walker同学
+    </title>
+    
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+    
+    <!-- Meta & INfo -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Walker">
+    <meta name="description" content="“一个有写小说梦的，却跳着舞的程序员”">
+    <meta name="keywords" content="闲聊">
+    
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+    
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Walker同学">
+    
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://zhangdo.github.io">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Walker同学">
+    <meta property="og:description" content="“一个有写小说梦的，却跳着舞的程序员”">
+    
+     <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+        
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+    
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+	body, html{
+		font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+	}
+	
+    a{
+        color: #00838F
+    }
+    
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important
+    }
+    
+	/* Sidebar User Drop Down Menu Text Color */
+	#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus{
+        color: #0097A7 !important
+    }
+    
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a{
+        color: #0097A7 !important
+    }
+    
+    .toTop{
+        background: #757575 !important
+    }
+		
+	.material-layout .material-post>.material-nav,
+	.material-layout .material-index>.material-nav,
+	.material-nav a{
+		color: #757575;
+	}
+		
+	#scheme-Paradox .MD-burger-layer {
+		background-color: #757575;
+	}
+
+	#scheme-Paradox #post-toc-trigger-btn{
+		color: #757575;
+	}
+	
+	.post-toc a:hover{
+		color: #00838F;
+		text-decoration: underline;
+	}
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body{
+            background-color: #2B2A28
+        }
+		
+		/* blog_info bottom background */
+        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+            background-color: #fff;
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+	<script src="/js/jquery.min.js"></script>
+	
+	<!-- UC Browser Compatible-->
+	<script>
+		var agent = navigator.userAgent.toLowerCase();
+		if(agent.indexOf('ucbrowser')>0) {
+			document.write('<link rel="stylesheet" href="/css/uc.css">');
+		   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+		}
+	</script>
+    
+    <!-- Custom Head -->
+    
+</head>
+	
+	
+
+    <body id="scheme-Paradox">
+
+		
+        <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+				
+			
+			
+            <!-- Main Container -->
+            <main class="material-layout__content" id="main">
+				
+                <!-- Top Anchor -->
+                <div id="top"></div>
+				
+				
+                <!-- Hamburger Button -->
+                <button class="MD-burger-icon sidebar-toggle">
+                    <span class="MD-burger-layer"></span>
+                </button>
+				
+				
+                
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
+
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
+			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Reference-API"><span class="post-toc-number">1.</span> <span class="post-toc-text">Reference API</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTML"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">HTML</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Root-Element"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">Root Element</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Step-Element"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">Step Element</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2D-Coordinates-Positioning-data-x-data-y"><span class="post-toc-number">1.1.2.1.</span> <span class="post-toc-text">2D Coordinates Positioning (data-x, data-y)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2D-Scaling-data-scale"><span class="post-toc-number">1.1.2.2.</span> <span class="post-toc-text">2D Scaling (data-scale)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2D-Rotation-data-rotate"><span class="post-toc-number">1.1.2.3.</span> <span class="post-toc-text">2D Rotation (data-rotate)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3D-Coordinates-Positioning-data-z"><span class="post-toc-number">1.1.2.4.</span> <span class="post-toc-text">3D Coordinates Positioning (data-z)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3D-Rotation-data-rotate-x-data-rotate-y-data-rotate-z"><span class="post-toc-number">1.1.2.5.</span> <span class="post-toc-text">3D Rotation (data-rotate-x, data-rotate-y, data-rotate-z)</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#CSS"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">CSS</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4D-States-past-present-and-future-classes"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">4D States (.past, .present and .future classes)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Current-Active-Step-active-class"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">Current Active Step (.active class)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Progressive-Enhancement-impress-not-supported-class"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">Progressive Enhancement (.impress-not-supported class)</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#JavaScript"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">JavaScript</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#impress-id"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">impress( [ id ] )</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ImpressAPI"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">ImpressAPI</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#init"><span class="post-toc-number">1.3.2.1.</span> <span class="post-toc-text">.init()</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#next"><span class="post-toc-number">1.3.2.2.</span> <span class="post-toc-text">.next()</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#impress-prev"><span class="post-toc-number">1.3.2.3.</span> <span class="post-toc-text">impress().prev()</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#impress-goto-stepIndex-stepElementId-stepElement-duration"><span class="post-toc-number">1.3.2.4.</span> <span class="post-toc-text">impress().goto( stepIndex | stepElementId | stepElement, [ duration ] )</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Improve-The-Docs"><span class="post-toc-number">2.</span> <span class="post-toc-text">Improve The Docs</span></a></li></ol>
+		
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
+	
+		
+			<!-- Random Thumbnail -->
+			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+				<script>
+    
+    var randomNum;
+    randomNum = Math.floor(Math.random() * 5 + 1);
+    
+    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')');
+    
+</script>
+
+		
+	
+        <p class="article-headline-p">
+            
+        </p>
+    </div>
+
+	
+
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Walker</strong>
+        <span>1月 19, 2017</span>
+    </div>
+    
+    <div class="section-spacer"></div>
+	
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+    
+    <!-- Tags (bookmark) -->
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    
+    
+    
+    
+    <!-- Share Twitter -->
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://zhangdo.github.io/#/DOCUMENTATION.html&via=Walker" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Twitter
+        </li>
+    </a>
+    
+    <!-- Share Google+ -->
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://zhangdo.github.io/#/DOCUMENTATION.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+    <!-- Share Weibo -->
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://zhangdo.github.io/#/DOCUMENTATION.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+</ul>
+</div>
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<h1 id="Reference-API"><a href="#Reference-API" class="headerlink" title="Reference API"></a>Reference API</h1><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="Root-Element"><a href="#Root-Element" class="headerlink" title="Root Element"></a>Root Element</h3><p>impress.js requires a Root Element. All the content of the presentation will be created inside that element. It is not recommended to manipulate any of the styles, attributes or classes that are created by impress.js inside the Root Element after initialization.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"impress"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="Step-Element"><a href="#Step-Element" class="headerlink" title="Step Element"></a>Step Element</h3><p>A Step Element is an element that contains metadata that defines how it is going to be presented in the screen.<br>A Step Element should contain a <code>.step</code> class and an optional <code>id</code> attribute.<br>The content represents an html fragment that will be positioned at the center of the camera.<br>In the Step Element, you can define a specific set of default attributes and positioning, that are documented below.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"bored"</span> <span class="attr">class</span>=<span class="string">"step"</span> <span class="attr">data-x</span>=<span class="string">"-1000"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">q</span>&gt;</span>Aren’t you just <span class="tag">&lt;<span class="name">b</span>&gt;</span>bored<span class="tag">&lt;/<span class="name">b</span>&gt;</span> with all those slides-based presentations?<span class="tag">&lt;/<span class="name">q</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h4 id="2D-Coordinates-Positioning-data-x-data-y"><a href="#2D-Coordinates-Positioning-data-x-data-y" class="headerlink" title="2D Coordinates Positioning (data-x, data-y)"></a>2D Coordinates Positioning (data-x, data-y)</h4><p>Define the pixel based position in which the <strong>center</strong> of the <a href="#step-element">Step Element</a> will be positioned inside the infinite canvas.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"bored"</span> <span class="attr">class</span>=<span class="string">"step"</span> <span class="attr">data-x</span>=<span class="string">"-1000"</span> <span class="attr">data-y</span>=<span class="string">"-1500"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">q</span>&gt;</span>Aren’t you just <span class="tag">&lt;<span class="name">b</span>&gt;</span>bored<span class="tag">&lt;/<span class="name">b</span>&gt;</span> with all those slides-based presentations?<span class="tag">&lt;/<span class="name">q</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h4 id="2D-Scaling-data-scale"><a href="#2D-Scaling-data-scale" class="headerlink" title="2D Scaling (data-scale)"></a>2D Scaling (data-scale)</h4><p>Defines the scaling multiplier of the <a href="#step-element">Step Element</a> relative to other Step Elements. For example, <code>data-scale=&quot;4&quot;</code> means that the element will appear to be 4 times larger than the others. From the presentation and transitions point of view, it means that it will have to be scaled down (4 times) to make it back to its correct size.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"title"</span> <span class="attr">class</span>=<span class="string">"step"</span> <span class="attr">data-x</span>=<span class="string">"0"</span> <span class="attr">data-y</span>=<span class="string">"0"</span> <span class="attr">data-scale</span>=<span class="string">"4"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"try"</span>&gt;</span>then you should try<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>impress.js<span class="tag">&lt;<span class="name">sup</span>&gt;</span>*<span class="tag">&lt;/<span class="name">sup</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"footnote"</span>&gt;</span><span class="tag">&lt;<span class="name">sup</span>&gt;</span>*<span class="tag">&lt;/<span class="name">sup</span>&gt;</span> no rhyme intended<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h4 id="2D-Rotation-data-rotate"><a href="#2D-Rotation-data-rotate" class="headerlink" title="2D Rotation (data-rotate)"></a>2D Rotation (data-rotate)</h4><p>Represents the amount of clockwise rotation of the element relative to 360 degrees.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"its"</span> <span class="attr">class</span>=<span class="string">"step"</span> <span class="attr">data-x</span>=<span class="string">"850"</span> <span class="attr">data-y</span>=<span class="string">"3000"</span> <span class="attr">data-rotate</span>=<span class="string">"90"</span> <span class="attr">data-scale</span>=<span class="string">"5"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">      It’s a <span class="tag">&lt;<span class="name">strong</span>&gt;</span>presentation tool<span class="tag">&lt;/<span class="name">strong</span>&gt;</span> <span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">      inspired by the idea behind <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://prezi.com"</span>&gt;</span>prezi.com<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">      and based on the <span class="tag">&lt;<span class="name">strong</span>&gt;</span>power of CSS3 transforms and transitions<span class="tag">&lt;/<span class="name">strong</span>&gt;</span> in modern browsers.</div><div class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h4 id="3D-Coordinates-Positioning-data-z"><a href="#3D-Coordinates-Positioning-data-z" class="headerlink" title="3D Coordinates Positioning (data-z)"></a>3D Coordinates Positioning (data-z)</h4><p>Define the pixel based position in which the <strong>center</strong> of the <a href="#step-element">Step Element</a> will be positioned inside the infinite canvas on the third dimension (Z) axis. For example, if we use <code>data-z=&quot;-3000&quot;</code>, it means that the <a href="#step-element">Step Element</a> will be positioned far away from the camera (by 3000px).</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"tiny"</span> <span class="attr">class</span>=<span class="string">"step"</span> <span class="attr">data-x</span>=<span class="string">"2825"</span> <span class="attr">data-y</span>=<span class="string">"2325"</span> <span class="attr">data-z</span>=<span class="string">"-3000"</span> <span class="attr">data-rotate</span>=<span class="string">"300"</span> <span class="attr">data-scale</span>=<span class="string">"1"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>and <span class="tag">&lt;<span class="name">b</span>&gt;</span>tiny<span class="tag">&lt;/<span class="name">b</span>&gt;</span> ideas<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h4 id="3D-Rotation-data-rotate-x-data-rotate-y-data-rotate-z"><a href="#3D-Rotation-data-rotate-x-data-rotate-y-data-rotate-z" class="headerlink" title="3D Rotation (data-rotate-x, data-rotate-y, data-rotate-z)"></a>3D Rotation (data-rotate-x, data-rotate-y, data-rotate-z)</h4><p>You can not only position a <a href="#step-element">Step Element</a> in 3D, but also rotate it around any axis.</p>
+<p><strong>Example:</strong></p>
+<p>The example below will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and 10 degrees (clockwise) around Y axis.</p>
+<p>You can of course rotate it around Z axis with <code>data-rotate-z</code> - it has exactly the same effect as <code>data-rotate</code> (these two are basically aliases).</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"its-in-3d"</span> <span class="attr">class</span>=<span class="string">"step"</span> <span class="attr">data-x</span>=<span class="string">"6200"</span> <span class="attr">data-y</span>=<span class="string">"4300"</span> <span class="attr">data-z</span>=<span class="string">"-100"</span> <span class="attr">data-rotate-x</span>=<span class="string">"-40"</span> <span class="attr">data-rotate-y</span>=<span class="string">"10"</span> <span class="attr">data-scale</span>=<span class="string">"2"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"have"</span>&gt;</span>have<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"you"</span>&gt;</span>you<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"noticed"</span>&gt;</span>noticed<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"its"</span>&gt;</span>it’s<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"in"</span>&gt;</span>in<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">b</span>&gt;</span>3D<span class="tag">&lt;<span class="name">sup</span>&gt;</span>*<span class="tag">&lt;/<span class="name">sup</span>&gt;</span><span class="tag">&lt;/<span class="name">b</span>&gt;</span>?</div><div class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"footnote"</span>&gt;</span>* beat that, prezi ;)<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h3 id="4D-States-past-present-and-future-classes"><a href="#4D-States-past-present-and-future-classes" class="headerlink" title="4D States (.past, .present and .future classes)"></a>4D States (.past, .present and .future classes)</h3><p>The <code>.future</code> class is added to all <a href="#step-element">Step Elements</a> that haven’t been visited yet.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.future</span> &#123;</div><div class="line">  <span class="attribute">display</span>: none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>The <code>.present</code> class is added to the <a href="#step-element">Step Element</a> that is currently at the center of the camera. This is useful to create animations inside the step once the camera navigates to it.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.present</span> <span class="selector-class">.rotating</span> &#123;</div><div class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(-10deg);</div><div class="line">  <span class="attribute">transition-delay</span>: <span class="number">0.25s</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>The <code>.past</code> class is added to all <a href="#step-element">Step Elements</a> that have been visited at least once.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.past</span> &#123;</div><div class="line">  <span class="attribute">display</span>: none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Current-Active-Step-active-class"><a href="#Current-Active-Step-active-class" class="headerlink" title="Current Active Step (.active class)"></a>Current Active Step (.active class)</h3><p>The <code>.active</code> class is added to the <a href="#step-element">Step Element</a> that is currently visible at the center of the camera.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.step</span> &#123;</div><div class="line">  <span class="attribute">opacity</span>: <span class="number">0.3</span>;</div><div class="line">  <span class="attribute">transition</span>: opacity <span class="number">1s</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.step</span><span class="selector-class">.active</span> &#123;</div><div class="line">  <span class="attribute">opacity</span>: <span class="number">1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>At the same time, the <code>impress-on-*</code> class is added to the body element, the class name represents the active <a href="#step-element">Step Element</a> id. This allows for custom global styling, since you can’t match a CSS class backwards from the active <a href="#step-element">Step Element</a> to the <code>body</code>.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.impress-on-overview</span> <span class="selector-class">.step</span> &#123;</div><div class="line">    <span class="attribute">opacity</span>: <span class="number">1</span>;</div><div class="line">    <span class="attribute">cursor</span>: pointer;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.impress-on-step-1</span>,</div><div class="line"><span class="selector-class">.impress-on-step-2</span>,</div><div class="line"><span class="selector-class">.impress-on-step-3</span> &#123;</div><div class="line">  <span class="attribute">background</span>: LightBlue;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Progressive-Enhancement-impress-not-supported-class"><a href="#Progressive-Enhancement-impress-not-supported-class" class="headerlink" title="Progressive Enhancement (.impress-not-supported class)"></a>Progressive Enhancement (.impress-not-supported class)</h3><p>The <code>.impress-not-supported</code> class is added to the <code>body</code> element if the browser doesn’t support the features required by impress.js to work, it is useful to apply some fallback styles in the CSS.</p>
+<p>It’s not necessary to add it manually on the <code>body</code> element. If the script detects that the browser lacks important features it will add this class.</p>
+<p>It is recommended to add the class manually to the <code>body</code> element though, because that means that users without JavaScript will also get fallback styles. When impress.js script detects that the browser supports all required features, the <code>.impress-not-support</code> class will be removed from the <code>body</code> element.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.impress-not-supported</span> <span class="selector-class">.step</span> &#123;</div><div class="line">  <span class="attribute">display</span>: inline-block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="impress-id"><a href="#impress-id" class="headerlink" title="impress( [ id ] )"></a>impress( [ id ] )</h3><p>A factory function that creates the <a href="#impressapi">ImpressAPI</a>.</p>
+<p>Accepts a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" rel="external"><code>String</code></a> that represents the id of the root element in the page. If omitted, impress.js will lookup for the element with the id “impress” by default.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> impressAPI = impress( <span class="string">"root"</span> );</div></pre></td></tr></table></figure>
+<h3 id="ImpressAPI"><a href="#ImpressAPI" class="headerlink" title="ImpressAPI"></a>ImpressAPI</h3><p>The main impress.js API that handles common operations of impress.js, listed below.</p>
+<h4 id="init"><a href="#init" class="headerlink" title=".init()"></a>.init()</h4><p>Initializes impress.js globally in the page. Only one instance of impress.js is supported per document.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">impress().init();</div></pre></td></tr></table></figure>
+<p>Triggers the <code>impress:init</code> event in the <a href="#root-element">Root Element</a> after the presentation is initialized.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> rootElement = <span class="built_in">document</span>.getElementById( <span class="string">"impress"</span> );</div><div class="line">rootElement.addEventListener( <span class="string">"impress:init"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log( <span class="string">"Impress init"</span> );</div><div class="line">&#125;);</div><div class="line">impress().init();</div></pre></td></tr></table></figure>
+<h4 id="next"><a href="#next" class="headerlink" title=".next()"></a>.next()</h4><p>Navigates to the next step of the presentation using the <a href="#impressgotostepindexstepelementidstepelement-duration"><code>goto()</code> function</a>.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> api = impress();</div><div class="line">api.init();</div><div class="line">api.next();</div></pre></td></tr></table></figure>
+<h4 id="impress-prev"><a href="#impress-prev" class="headerlink" title="impress().prev()"></a>impress().prev()</h4><p>Navigates to the previous step of the presentation using the <a href="#impressgotostepindexstepelementidstepelement-duration"><code>goto()</code> function</a>.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> api = impress();</div><div class="line">api.init();</div><div class="line">api.prev();</div></pre></td></tr></table></figure>
+<h4 id="impress-goto-stepIndex-stepElementId-stepElement-duration"><a href="#impress-goto-stepIndex-stepElementId-stepElement-duration" class="headerlink" title="impress().goto( stepIndex | stepElementId | stepElement, [ duration ] )"></a>impress().goto( stepIndex | stepElementId | stepElement, [ duration ] )</h4><p>Accepts a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" rel="external"><code>Number</code></a> that represents the step index.</p>
+<p>Navigates to the step given the provided step index.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> api = impress();</div><div class="line">api.init();</div><div class="line">api.goto(<span class="number">7</span>);</div></pre></td></tr></table></figure>
+<p>Accepts a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" rel="external"><code>String</code></a> that represents the <a href="#step-element">Step Element</a> id.</p>
+<p>Navigates to the step given the provided <a href="#step-element">Step Element</a> id.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> api = impress();</div><div class="line">api.init();</div><div class="line">api.goto( <span class="string">"overview"</span> );</div></pre></td></tr></table></figure>
+<p>Accepts an <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement" target="_blank" rel="external"><code>HTMLElement</code></a> that represents the <a href="#step-element">Step Element</a>.</p>
+<p>Navigates to the step given the provided <a href="#step-element">Step Element</a>.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> overview = <span class="built_in">document</span>.getElementById( <span class="string">"overview"</span> );</div><div class="line"><span class="keyword">var</span> api = impress();</div><div class="line">api.init();</div><div class="line">api.goto( overview );</div></pre></td></tr></table></figure>
+<p>Accepts an optional <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" rel="external">Number</a> in the last argument that represents the duration of the transition in milliseconds. If not provided, the default transition duration for the presentation will be used.</p>
+<p>Triggers the <code>impress:stepenter</code> event in the <a href="#root-element">Root Element</a> when the presentation navigates to the target <a href="#step-element">Step Element</a>.</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> rootElement = <span class="built_in">document</span>.getElementById( <span class="string">"impress"</span> );</div><div class="line">rootElement.addEventListener( <span class="string">"impress:stepenter"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> currentStep = <span class="built_in">document</span>.querySelector( <span class="string">".present"</span> );</div><div class="line">  <span class="built_in">console</span>.log( <span class="string">"Entered the Step Element '"</span> + currentStep.id + <span class="string">"'"</span> );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Triggers the <code>impress:stepleave</code> event in the <a href="#root-element">Root Element</a> when the presentation navigates away from the current <a href="#step-element">Step Element</a>.</p>
+<p><strong>Example:</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> rootElement = <span class="built_in">document</span>.getElementById( <span class="string">"impress"</span> );</div><div class="line">rootElement.addEventListener( <span class="string">"impress:stepleave"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> currentStep = event.target</div><div class="line">  <span class="built_in">console</span>.log( <span class="string">"Left the Step Element '"</span> + currentStep.id + <span class="string">"'"</span> );</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h1 id="Improve-The-Docs"><a href="#Improve-The-Docs" class="headerlink" title="Improve The Docs"></a>Improve The Docs</h1><p>Did you found something that can be improved? Then <a href="https://github.com/impress/impress.js/issues/new" target="_blank" rel="external">create an issue</a> so that we can discuss it!</p>
+
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+    <!-- 使用多说评论 -->
+    <link rel="stylesheet" href="/css/duoshuo.min.css">
+<style>
+    #ds-thread #ds-reset .ds-post-button{
+        background-color: #0097A7 !important;
+    }
+    #ds-wrapper #ds-reset .ds-icons-32{
+        background-color: #0097A7 !important;
+    }
+    #ds-reset .ds-highlight {
+        color: #0097A7 !important;
+    }
+</style>
+<div id="comments">
+    <!-- 多说评论框 start -->
+        <div class="ds-thread" 
+            data-thread-key="#/DOCUMENTATION.html" 
+            data-url="http://zhangdo.github.io/#/DOCUMENTATION.html"
+            data-title=""></div>
+    <!-- 多说评论框 end -->
+</div>
+
+
+
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+        </div>
+    </div>
+
+				
+				
+					<!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay "></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored  sidebar-fixed-left" role="navigation">
+	<div id="sidebar-main">
+	    <!-- Sidebar Header -->
+		<div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+    <i class="material-icons">clear_all</i>
+    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Walker's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        dark_horse8023@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+		<!-- Sidebar Navigation  -->
+		<ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+			
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+						<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    <li id="sidebar-first-li">
+        <a href="/" target="_self">
+            <i class="material-icons sidebar-material-icons">home</i>
+             主页
+        </a>
+    </li>
+
+    <!-- I'm Feeling Lucky -->
+<!--
+    <li class="dropdown">
+        <a href="" target="_self">
+            <i class="material-icons sidebar-material-icons">explore</i>
+             sidebar.imlucky
+        </a>
+    </li>
+-->
+
+	
+    <!-- Archives  -->
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">inbox</i>
+             归档
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            <a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/10/">十月 2016<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/06/">六月 2016<span class="sidebar_archives-count">2</span></a>
+        </ul>
+    </li>
+
+    <!-- Divider -->
+    <li class="divider"></li>
+
+
+    <!-- Pages  -->
+	
+		<li>
+			<a href="/guestbook" title="guestbook">
+				guestbook
+			</a>
+		</li>
+	
+		<li>
+			<a href="/#" title="about">
+				about
+			</a>
+		</li>
+	
+
+    <!-- Article Numebr  -->
+    <li>
+        <a href="/archives">
+             文章总数
+             <span class="sidebar-badge">24</span>
+        </a>
+    </li>
+</ul>
+
+		<!-- Sidebar Divider -->
+		<div class="sidebar-divider"></div>
+
+		<!-- Sidebar Footer -->
+		<!-- 
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持。 :) 
+-->
+
+<!-- Theme Material -->
+<a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+	<div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		主题 - Material
+		<span class="sidebar-badge badge-circle">i</span>
+	</div>
+</a>
+
+<!-- Help & Support -->
+<!--
+<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		sidebar.help
+		<span class="mdl-button__ripple-container">
+			<span class="mdl-ripple"></span>
+		</span>
+	</div>
+</a>
+-->
+
+<!-- Feedback -->
+<!--
+<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.feedback
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>
+-->
+
+<!-- Abount Theme -->
+<!--
+<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.about_theme
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>-->
+
+	</div>
+    
+    <!-- Sidebar Sponsor -->
+    
+
+
+</aside>
+
+				
+				
+				
+					<!-- Footer Top Button -->
+					<div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+				
+				
+				<!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+	
+	
+		<!-- Paradox Footer Left Section -->
+		<div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+    <a href="https://twitter.com/horse8023" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.png);">
+        <span class="visuallyhidden">Twitter</span>
+    </button></a>
+    
+    
+    <!-- Facebook -->
+    
+    <a href="https://www.facebook.com/facebook" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.png);">
+        <span class="visuallyhidden">Facebook</span>
+    </button></a>
+    
+    
+    <!-- Google + -->
+    
+    <a href="https://www.google.com/" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.png);">
+        <span class="visuallyhidden">Google Plus</span>
+    </button></a>
+    
+    
+    <!-- Weibo -->
+    
+    <a href="http://weibo.com/u/3055673883?refer_flag=1001030101_&amp;is_all=1" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-weibo.png);">
+        <span class="visuallyhidden">Weibo</span>
+    </button></a>
+    
+    
+    <!-- Instagram -->
+    
+    
+    
+    <!-- Tumblr -->
+    
+    
+    
+    <!-- Github -->
+    
+    <a href="https://github.com/ZhangDo" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.png);">
+        <span class="visuallyhidden">Github</span>
+    </button></a>
+    
+</div>
+
+
+		<!--Copyright-->
+		<div id="copyright">Copyright&nbsp;©&nbsp;<script type="text/javascript">var fd = new Date();document.write(fd.getFullYear());</script>&nbsp;Walker同学</div>
+
+		<!-- Paradox Footer Right Section -->
+
+		<!-- 
+		I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+		It will not impact the appearance and can give developers a lot of support :)
+
+		很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+		它不会影响美观并可以给开发者很大的支持。 :) 
+		-->
+
+		<div class="mdl-mini-footer--right-section">
+			<div>
+				<div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+				<div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+			</div>
+		</div>
+	
+    
+</footer>
+                
+				<!-- Import File -->
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    
+    $('#nprogress .bar').css({
+        'background': '#FF4081'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4081',
+        'border-left-color': '#FF4081'
+    });
+    
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+    <!-- 多说公共 js 代码 start -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"walkertx"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = 'https://static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共 js 代码 end -->
+
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    // Post_Toc parent position fixed
+    $(window).load(function() {
+        $(".post-toc-wrap").parent(".mdl-menu__container").css("position", "fixed");
+    });
+</script>
+            </main>
+        </div>
+		
+    </body>
+		
+	
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Title -->
+    
+    <title>
+        Walker同学
+    </title>
+    
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+    
+    <!-- Meta & INfo -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Walker">
+    <meta name="description" content="“一个有写小说梦的，却跳着舞的程序员”">
+    <meta name="keywords" content="闲聊">
+    
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+    
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Walker同学">
+    
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://zhangdo.github.io">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Walker同学">
+    <meta property="og:description" content="“一个有写小说梦的，却跳着舞的程序员”">
+    
+     <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+        
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+    
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+	body, html{
+		font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+	}
+	
+    a{
+        color: #00838F
+    }
+    
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important
+    }
+    
+	/* Sidebar User Drop Down Menu Text Color */
+	#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus{
+        color: #0097A7 !important
+    }
+    
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a{
+        color: #0097A7 !important
+    }
+    
+    .toTop{
+        background: #757575 !important
+    }
+		
+	.material-layout .material-post>.material-nav,
+	.material-layout .material-index>.material-nav,
+	.material-nav a{
+		color: #757575;
+	}
+		
+	#scheme-Paradox .MD-burger-layer {
+		background-color: #757575;
+	}
+
+	#scheme-Paradox #post-toc-trigger-btn{
+		color: #757575;
+	}
+	
+	.post-toc a:hover{
+		color: #00838F;
+		text-decoration: underline;
+	}
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body{
+            background-color: #2B2A28
+        }
+		
+		/* blog_info bottom background */
+        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+            background-color: #fff;
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+	<script src="/js/jquery.min.js"></script>
+	
+	<!-- UC Browser Compatible-->
+	<script>
+		var agent = navigator.userAgent.toLowerCase();
+		if(agent.indexOf('ucbrowser')>0) {
+			document.write('<link rel="stylesheet" href="/css/uc.css">');
+		   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+		}
+	</script>
+    
+    <!-- Custom Head -->
+    
+</head>
+	
+	
+
+    <body id="scheme-Paradox">
+
+		
+        <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+				
+			
+			
+            <!-- Main Container -->
+            <main class="material-layout__content" id="main">
+				
+                <!-- Top Anchor -->
+                <div id="top"></div>
+				
+				
+                <!-- Hamburger Button -->
+                <button class="MD-burger-icon sidebar-toggle">
+                    <span class="MD-burger-layer"></span>
+                </button>
+				
+				
+                
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
+
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
+			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#VERSION-HISTORY"><span class="post-toc-number">1.</span> <span class="post-toc-text">VERSION HISTORY</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#0-5-3-browse-zip-tar"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">0.5.3 (browse, zip, tar)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#BUGFIX-RELEASE"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">BUGFIX RELEASE</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#0-5-2-browse-zip-tar"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">0.5.2 (browse, zip, tar)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#DOCUMENTATION-RELEASE"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">DOCUMENTATION RELEASE</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#0-5-1-browse-zip-tar"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">0.5.1 (browse, zip, tar)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#BUGFIX-RELEASE-1"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">BUGFIX RELEASE</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#0-5-browse-zip-tar"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">0.5 (browse, zip, tar)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CHANGELOG"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">CHANGELOG</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#UPGRADING-FROM-PREVIOUS-VERSIONS"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">UPGRADING FROM PREVIOUS VERSIONS</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#0-4-1-browse-zip-tar"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">0.4.1 (browse, zip, tar)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#BUGFIX-RELEASE-2"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">BUGFIX RELEASE</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#0-4-browse-zip-tar"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">0.4 (browse, zip, tar)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CHANGELOG-1"><span class="post-toc-number">1.6.1.</span> <span class="post-toc-text">CHANGELOG</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#UPGRADING-FROM-PREVIOUS-VERSIONS-1"><span class="post-toc-number">1.6.2.</span> <span class="post-toc-text">UPGRADING FROM PREVIOUS VERSIONS</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#NOTE-ON-BLACKBERRY-PLAYBOOK"><span class="post-toc-number">1.6.3.</span> <span class="post-toc-text">NOTE ON BLACKBERRY PLAYBOOK</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#0-3-browse-zip-tar"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">0.3 (browse, zip, tar)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CHANGELOG-2"><span class="post-toc-number">1.7.1.</span> <span class="post-toc-text">CHANGELOG</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#UPGRADING-FROM-PREVIOUS-VERSIONS-2"><span class="post-toc-number">1.7.2.</span> <span class="post-toc-text">UPGRADING FROM PREVIOUS VERSIONS</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#0-2-browse-zip-tar"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">0.2 (browse, zip, tar)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#0-1-browse-zip-tar"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">0.1 (browse, zip, tar)</span></a></li></ol></li></ol>
+		
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
+	
+		
+			<!-- Random Thumbnail -->
+			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+				<script>
+    
+    var randomNum;
+    randomNum = Math.floor(Math.random() * 5 + 1);
+    
+    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')');
+    
+</script>
+
+		
+	
+        <p class="article-headline-p">
+            
+        </p>
+    </div>
+
+	
+
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Walker</strong>
+        <span>1月 19, 2017</span>
+    </div>
+    
+    <div class="section-spacer"></div>
+	
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+    
+    <!-- Tags (bookmark) -->
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    
+    
+    
+    
+    <!-- Share Twitter -->
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://zhangdo.github.io/#/CHANGELOG.html&via=Walker" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Twitter
+        </li>
+    </a>
+    
+    <!-- Share Google+ -->
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://zhangdo.github.io/#/CHANGELOG.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+    <!-- Share Weibo -->
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://zhangdo.github.io/#/CHANGELOG.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+</ul>
+</div>
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<h2 id="VERSION-HISTORY"><a href="#VERSION-HISTORY" class="headerlink" title="VERSION HISTORY"></a>VERSION HISTORY</h2><h3 id="0-5-3-browse-zip-tar"><a href="#0-5-3-browse-zip-tar" class="headerlink" title="0.5.3 (browse, zip, tar)"></a>0.5.3 (<a href="http://github.com/bartaz/impress.js/tree/0.5.3" target="_blank" rel="external">browse</a>, <a href="http://github.com/bartaz/impress.js/zipball/0.5.3" target="_blank" rel="external">zip</a>, <a href="http://github.com/bartaz/impress.js/tarball/0.5.3" target="_blank" rel="external">tar</a>)</h3><h4 id="BUGFIX-RELEASE"><a href="#BUGFIX-RELEASE" class="headerlink" title="BUGFIX RELEASE"></a>BUGFIX RELEASE</h4><p>Version 0.5 introduced events including <code>impress:stepenter</code>, but this event was not triggered properly in some<br>specific transition types (for example when only scale was changing between steps). It was caused by the fact that<br>in such cases expected <code>transitionend</code> event was not triggered.</p>
+<p>This version fixes this issue. Unfortunately modern <code>transitionend</code> event is no longer used to detect when the<br>transition has finished, but old school (and more reliable) <code>setTimeout</code> is used.</p>
+<h3 id="0-5-2-browse-zip-tar"><a href="#0-5-2-browse-zip-tar" class="headerlink" title="0.5.2 (browse, zip, tar)"></a>0.5.2 (<a href="http://github.com/bartaz/impress.js/tree/0.5.2" target="_blank" rel="external">browse</a>, <a href="http://github.com/bartaz/impress.js/zipball/0.5.2" target="_blank" rel="external">zip</a>, <a href="http://github.com/bartaz/impress.js/tarball/0.5.2" target="_blank" rel="external">tar</a>)</h3><h4 id="DOCUMENTATION-RELEASE"><a href="#DOCUMENTATION-RELEASE" class="headerlink" title="DOCUMENTATION RELEASE"></a>DOCUMENTATION RELEASE</h4><p>More descriptive comments added to demo CSS and impress.js source file, so now not only <code>index.html</code> is worth reading ;)</p>
+<h3 id="0-5-1-browse-zip-tar"><a href="#0-5-1-browse-zip-tar" class="headerlink" title="0.5.1 (browse, zip, tar)"></a>0.5.1 (<a href="http://github.com/bartaz/impress.js/tree/0.5.1" target="_blank" rel="external">browse</a>, <a href="http://github.com/bartaz/impress.js/zipball/0.5.1" target="_blank" rel="external">zip</a>, <a href="http://github.com/bartaz/impress.js/tarball/0.5.1" target="_blank" rel="external">tar</a>)</h3><h4 id="BUGFIX-RELEASE-1"><a href="#BUGFIX-RELEASE-1" class="headerlink" title="BUGFIX RELEASE"></a>BUGFIX RELEASE</h4><p>Changes in version 0.5 introduced a bug (#126) that was preventing clicks on links (or any clickable elements) on<br>currently active step. This release fixes this issue.</p>
+<h3 id="0-5-browse-zip-tar"><a href="#0-5-browse-zip-tar" class="headerlink" title="0.5 (browse, zip, tar)"></a>0.5 (<a href="http://github.com/bartaz/impress.js/tree/0.5" target="_blank" rel="external">browse</a>, <a href="http://github.com/bartaz/impress.js/zipball/0.5" target="_blank" rel="external">zip</a>, <a href="http://github.com/bartaz/impress.js/tarball/0.5" target="_blank" rel="external">tar</a>)</h3><h4 id="CHANGELOG"><a href="#CHANGELOG" class="headerlink" title="CHANGELOG"></a>CHANGELOG</h4><ul>
+<li>API changed, so that <code>impress()</code> function no longer automatically initialize presentation; new method called <code>init</code><br>was added to API and it should be used to start the presentation</li>
+<li>event <code>impress:init</code> is triggered on root presentation element (<code>#impress</code> by default) when presentation is initialized</li>
+<li>new CSS classes were added: <code>impress-disabled</code> is added to body element by the impress.js script and it’s changed to<br><code>impress-enabled</code> when <code>init()</code> function is called</li>
+<li>events added when step is entered and left - custom <code>impress:stepenter</code> and <code>impress:stepleave</code> events are triggered<br>on step elements and can be handled like any other DOM events (with <code>addEventListener</code>)</li>
+<li>additional <code>past</code>, <code>present</code> and <code>future</code> classes are added to step elements<ul>
+<li><code>future</code> class appears on steps that were not yet visited</li>
+<li><code>present</code> class appears on currently visible step - it’s different from <code>active</code> class as <code>present</code> class<br> is added when transition finishes (step is entered)</li>
+<li><code>past</code> class is added to already visited steps (when the step is left)</li>
+</ul>
+</li>
+<li>and good news, <code>goto()</code> API method is back! it seems that <code>goto</code> <strong>was</strong> a future reserved word but isn’t anymore,<br>so we can use this short and pretty name instead of camelCassy <code>stepTo</code> - and yes, that means API changed again…</li>
+<li>additionally <code>goto()</code> method now supports new types of parameters:<ul>
+<li>you can give it a number of step you want to go to: <code>impress().goto(7)</code></li>
+<li>or its id: <code>impress().goto(&quot;the-best-slide-ever&quot;)</code></li>
+<li>of course DOM element is still acceptable: <code>impress().goto( document.getElementById(&quot;overview&quot;) )</code></li>
+</ul>
+</li>
+<li>and if it’s not enough, <code>goto()</code> also accepts second parameter to define the transition duration in ms, for example<br><code>impress().goto(&quot;make-it-quick&quot;, 300)</code> or <code>impress().goto(&quot;now&quot;, 0)</code></li>
+</ul>
+<h4 id="UPGRADING-FROM-PREVIOUS-VERSIONS"><a href="#UPGRADING-FROM-PREVIOUS-VERSIONS" class="headerlink" title="UPGRADING FROM PREVIOUS VERSIONS"></a>UPGRADING FROM PREVIOUS VERSIONS</h4><p>In current version calling <code>impress()</code> doesn’t automatically initialize the presentation. You need to call <code>init()</code><br>function from the API. So in a place were you called <code>impress()</code> to initialize impress.js simply change this call<br>to <code>impress().init()</code>.</p>
+<p>Version 0.4 changed <code>goto</code> API method into <code>stepTo</code>. It turned out that <code>goto</code> is not a reserved word anymore, so it<br>can be used in JavaScript. That’s why version 0.5 brings it back and removes <code>stepTo</code>.</p>
+<p>So if you have been using version 0.4 and have any reference to <code>stepTo</code> API method make sure to change it to <code>goto</code>.</p>
+<h3 id="0-4-1-browse-zip-tar"><a href="#0-4-1-browse-zip-tar" class="headerlink" title="0.4.1 (browse, zip, tar)"></a>0.4.1 (<a href="http://github.com/bartaz/impress.js/tree/0.4.1" target="_blank" rel="external">browse</a>, <a href="http://github.com/bartaz/impress.js/zipball/0.4.1" target="_blank" rel="external">zip</a>, <a href="http://github.com/bartaz/impress.js/tarball/0.4.1" target="_blank" rel="external">tar</a>)</h3><h4 id="BUGFIX-RELEASE-2"><a href="#BUGFIX-RELEASE-2" class="headerlink" title="BUGFIX RELEASE"></a>BUGFIX RELEASE</h4><p>Changes is version 0.4 introduced a bug causing JavaScript errors being thrown all over the place in fallback mode.<br>This release fixes this issue.</p>
+<p>It also adds a flag <code>impress.supported</code> that can be used in JavaScript to check if impress.js is supported in the browser.</p>
+<h3 id="0-4-browse-zip-tar"><a href="#0-4-browse-zip-tar" class="headerlink" title="0.4 (browse, zip, tar)"></a>0.4 (<a href="http://github.com/bartaz/impress.js/tree/0.4" target="_blank" rel="external">browse</a>, <a href="http://github.com/bartaz/impress.js/zipball/0.4" target="_blank" rel="external">zip</a>, <a href="http://github.com/bartaz/impress.js/tarball/0.4" target="_blank" rel="external">tar</a>)</h3><h4 id="CHANGELOG-1"><a href="#CHANGELOG-1" class="headerlink" title="CHANGELOG"></a>CHANGELOG</h4><ul>
+<li>configuration options on <code>#impress</code> element: <code>data-perspective</code> (in px, defaults so 1000),<br><code>data-transition-duration</code> (in ms, defaults to 1000)</li>
+<li>automatic scaling to fit window size, with configuration options:  <code>data-width</code> (in px, defaults to 1024),<br><code>data-height</code> (in px, defaults to 768), <code>max-scale</code> (defaults to 1), <code>min-scale</code> (defaults to 0)</li>
+<li><code>goto</code> API function was renamed to <code>stepTo</code> because <code>goto</code> is a future reserved work in JavaScript,<br>so <strong>please make sure to update your code</strong></li>
+<li>fallback <code>impress-not-supported</code> class is now set on <code>body</code> element instead of <code>#impress</code> element and it’s<br>replaced with <code>impress-supported</code> when browser supports all required features</li>
+<li>classes <code>step-ID</code> used to indicate progress of the presentation are now renamed to <code>impress-on-ID</code> and are<br>set on <code>body</code> element, so <strong>please make sure to update your code</strong></li>
+<li>basic validation of configuration options</li>
+<li>couple of typos and bugs fixed</li>
+<li>favicon added ;)</li>
+</ul>
+<h4 id="UPGRADING-FROM-PREVIOUS-VERSIONS-1"><a href="#UPGRADING-FROM-PREVIOUS-VERSIONS-1" class="headerlink" title="UPGRADING FROM PREVIOUS VERSIONS"></a>UPGRADING FROM PREVIOUS VERSIONS</h4><p>If in your custom JavaScript code you were using <code>goto()</code> function from impress.js API make sure to change it<br>to <code>stepTo()</code>.</p>
+<p>If in your CSS you were using classes based on currently active step with <code>step-</code> prefix, such as <code>step-bored</code><br>(where <code>bored</code> is the id of the step element) make sure to change it to <code>impress-on-</code> prefix<br>(for example <code>impress-on-bored</code>). Also in previous versions these classes were assigned to <code>#impress</code> element<br>and now they are added to <code>body</code> element, so if your CSS code depends on this, it also should be updated.</p>
+<p>Same happened to <code>impress-not-supported</code> class name - it was moved from <code>#impress</code> element to <code>body</code>, so update<br>your CSS if it’s needed.</p>
+<h4 id="NOTE-ON-BLACKBERRY-PLAYBOOK"><a href="#NOTE-ON-BLACKBERRY-PLAYBOOK" class="headerlink" title="NOTE ON BLACKBERRY PLAYBOOK"></a>NOTE ON BLACKBERRY PLAYBOOK</h4><p>Changes and fixes added in this version have broken the experience on Blackberry Playbook with OS in version 1.0.<br>It happened due to a bug in the Playbook browser in this version. Fortunately in version 2.0 of Playbook OS this<br>bug was fixed and impress.js works fine.</p>
+<p>So currently, on Blackberry Playbook, impress.js work only with latest OS. Fortunately, <a href="http://twitter.com/n_adam_stanley/status/178188611827679233" target="_blank" rel="external">it seems that most of the<br>users</a> [are quite quick with updating their devices]<br>(<a href="http://twitter.com/brcewane/status/178230406196379648" target="_blank" rel="external">http://twitter.com/brcewane/status/178230406196379648</a>)</p>
+<h3 id="0-3-browse-zip-tar"><a href="#0-3-browse-zip-tar" class="headerlink" title="0.3 (browse, zip, tar)"></a>0.3 (<a href="http://github.com/bartaz/impress.js/tree/0.3" target="_blank" rel="external">browse</a>, <a href="http://github.com/bartaz/impress.js/zipball/0.3" target="_blank" rel="external">zip</a>, <a href="http://github.com/bartaz/impress.js/tarball/0.3" target="_blank" rel="external">tar</a>)</h3><h4 id="CHANGELOG-2"><a href="#CHANGELOG-2" class="headerlink" title="CHANGELOG"></a>CHANGELOG</h4><ul>
+<li>minor CSS 3D fixes</li>
+<li>basic API to control the presentation flow from JavaScript</li>
+<li>touch event support</li>
+<li>basic support for iPad (iOS 5 and iOS 4 with polyfills) and Blackberry Playbook</li>
+</ul>
+<h4 id="UPGRADING-FROM-PREVIOUS-VERSIONS-2"><a href="#UPGRADING-FROM-PREVIOUS-VERSIONS-2" class="headerlink" title="UPGRADING FROM PREVIOUS VERSIONS"></a>UPGRADING FROM PREVIOUS VERSIONS</h4><p>Because API was introduced the way impress.js script is initialized was changed a bit. You not only have to include<br><code>impress.js</code> script file, but also call <code>impress()</code> function.</p>
+<p>See the source of <code>index.html</code> for example and more details.</p>
+<h3 id="0-2-browse-zip-tar"><a href="#0-2-browse-zip-tar" class="headerlink" title="0.2 (browse, zip, tar)"></a>0.2 (<a href="http://github.com/bartaz/impress.js/tree/0.2" target="_blank" rel="external">browse</a>, <a href="http://github.com/bartaz/impress.js/zipball/0.2" target="_blank" rel="external">zip</a>, <a href="http://github.com/bartaz/impress.js/tarball/0.2" target="_blank" rel="external">tar</a>)</h3><ul>
+<li>tutorial/documentation added to <code>index.html</code> source file</li>
+<li>being even more strict with strict mode</li>
+<li>code clean-up</li>
+<li>couple of small bug-fixes</li>
+</ul>
+<h3 id="0-1-browse-zip-tar"><a href="#0-1-browse-zip-tar" class="headerlink" title="0.1 (browse, zip, tar)"></a>0.1 (<a href="http://github.com/bartaz/impress.js/tree/0.1" target="_blank" rel="external">browse</a>, <a href="http://github.com/bartaz/impress.js/zipball/0.1" target="_blank" rel="external">zip</a>, <a href="http://github.com/bartaz/impress.js/tarball/0.1" target="_blank" rel="external">tar</a>)</h3><p>First release.</p>
+<p>Contains basic functionality for step placement and transitions between them<br>with simple fallback for non-supporting browsers.</p>
+
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+    <!-- 使用多说评论 -->
+    <link rel="stylesheet" href="/css/duoshuo.min.css">
+<style>
+    #ds-thread #ds-reset .ds-post-button{
+        background-color: #0097A7 !important;
+    }
+    #ds-wrapper #ds-reset .ds-icons-32{
+        background-color: #0097A7 !important;
+    }
+    #ds-reset .ds-highlight {
+        color: #0097A7 !important;
+    }
+</style>
+<div id="comments">
+    <!-- 多说评论框 start -->
+        <div class="ds-thread" 
+            data-thread-key="#/CHANGELOG.html" 
+            data-url="http://zhangdo.github.io/#/CHANGELOG.html"
+            data-title=""></div>
+    <!-- 多说评论框 end -->
+</div>
+
+
+
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+        </div>
+    </div>
+
+				
+				
+					<!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay "></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored  sidebar-fixed-left" role="navigation">
+	<div id="sidebar-main">
+	    <!-- Sidebar Header -->
+		<div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+    <i class="material-icons">clear_all</i>
+    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Walker's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        dark_horse8023@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+		<!-- Sidebar Navigation  -->
+		<ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+			
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+						<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    <li id="sidebar-first-li">
+        <a href="/" target="_self">
+            <i class="material-icons sidebar-material-icons">home</i>
+             主页
+        </a>
+    </li>
+
+    <!-- I'm Feeling Lucky -->
+<!--
+    <li class="dropdown">
+        <a href="" target="_self">
+            <i class="material-icons sidebar-material-icons">explore</i>
+             sidebar.imlucky
+        </a>
+    </li>
+-->
+
+	
+    <!-- Archives  -->
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">inbox</i>
+             归档
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            <a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/10/">十月 2016<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/06/">六月 2016<span class="sidebar_archives-count">2</span></a>
+        </ul>
+    </li>
+
+    <!-- Divider -->
+    <li class="divider"></li>
+
+
+    <!-- Pages  -->
+	
+		<li>
+			<a href="/guestbook" title="guestbook">
+				guestbook
+			</a>
+		</li>
+	
+		<li>
+			<a href="/#" title="about">
+				about
+			</a>
+		</li>
+	
+
+    <!-- Article Numebr  -->
+    <li>
+        <a href="/archives">
+             文章总数
+             <span class="sidebar-badge">24</span>
+        </a>
+    </li>
+</ul>
+
+		<!-- Sidebar Divider -->
+		<div class="sidebar-divider"></div>
+
+		<!-- Sidebar Footer -->
+		<!-- 
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持。 :) 
+-->
+
+<!-- Theme Material -->
+<a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+	<div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		主题 - Material
+		<span class="sidebar-badge badge-circle">i</span>
+	</div>
+</a>
+
+<!-- Help & Support -->
+<!--
+<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		sidebar.help
+		<span class="mdl-button__ripple-container">
+			<span class="mdl-ripple"></span>
+		</span>
+	</div>
+</a>
+-->
+
+<!-- Feedback -->
+<!--
+<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.feedback
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>
+-->
+
+<!-- Abount Theme -->
+<!--
+<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.about_theme
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>-->
+
+	</div>
+    
+    <!-- Sidebar Sponsor -->
+    
+
+
+</aside>
+
+				
+				
+				
+					<!-- Footer Top Button -->
+					<div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+				
+				
+				<!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+	
+	
+		<!-- Paradox Footer Left Section -->
+		<div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+    <a href="https://twitter.com/horse8023" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.png);">
+        <span class="visuallyhidden">Twitter</span>
+    </button></a>
+    
+    
+    <!-- Facebook -->
+    
+    <a href="https://www.facebook.com/facebook" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.png);">
+        <span class="visuallyhidden">Facebook</span>
+    </button></a>
+    
+    
+    <!-- Google + -->
+    
+    <a href="https://www.google.com/" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.png);">
+        <span class="visuallyhidden">Google Plus</span>
+    </button></a>
+    
+    
+    <!-- Weibo -->
+    
+    <a href="http://weibo.com/u/3055673883?refer_flag=1001030101_&amp;is_all=1" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-weibo.png);">
+        <span class="visuallyhidden">Weibo</span>
+    </button></a>
+    
+    
+    <!-- Instagram -->
+    
+    
+    
+    <!-- Tumblr -->
+    
+    
+    
+    <!-- Github -->
+    
+    <a href="https://github.com/ZhangDo" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.png);">
+        <span class="visuallyhidden">Github</span>
+    </button></a>
+    
+</div>
+
+
+		<!--Copyright-->
+		<div id="copyright">Copyright&nbsp;©&nbsp;<script type="text/javascript">var fd = new Date();document.write(fd.getFullYear());</script>&nbsp;Walker同学</div>
+
+		<!-- Paradox Footer Right Section -->
+
+		<!-- 
+		I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+		It will not impact the appearance and can give developers a lot of support :)
+
+		很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+		它不会影响美观并可以给开发者很大的支持。 :) 
+		-->
+
+		<div class="mdl-mini-footer--right-section">
+			<div>
+				<div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+				<div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+			</div>
+		</div>
+	
+    
+</footer>
+                
+				<!-- Import File -->
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    
+    $('#nprogress .bar').css({
+        'background': '#FF4081'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4081',
+        'border-left-color': '#FF4081'
+    });
+    
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+    <!-- 多说公共 js 代码 start -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"walkertx"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = 'https://static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共 js 代码 end -->
+
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    // Post_Toc parent position fixed
+    $(window).load(function() {
+        $(".post-toc-wrap").parent(".mdl-menu__container").css("position", "fixed");
+    });
+</script>
+            </main>
+        </div>
+		
+    </body>
+		
+	
+</html>
