@@ -563,135 +563,6 @@
 		
 		
     
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2016/06/20/一个渣渣学习Swift（二）/">一个渣渣学习Swift（二）</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-          UICollectionView当我们使用UICollectionView的大部分时候都需要去自定义Cell视图，刚开始我们先将简单的CollectionView展示出来(最简单的形式)，到后面我们再去进行Cell的自定义声明：viewController中实现collectionView的三个协议UICollectionViewDataSource UICollectionViewDelegate UICollectionViewDelegateFlowLayout
-1234567891011121314class CollectionVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout &#123;    let width = UIScreen.mainScreen().bounds.width    let height = UIScreen.mainScreen().bounds.height    let collectionIdentifier = &quot;CollectionCell&quot;            override func viewDidLoad() &#123;        super.viewDidLoad()        self.title = &quot;UICollection&quot;        self.view.backgroundColor = UIColor.whiteColor()        self.initUICollectionView()        // Do any additional setup after loading the view.    &#125;&#125;
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/06/20/一个渣渣学习Swift（二）/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/a.png" width="44px" height="44px" alt="Walker's avatar">
-            </div>
-            <div>
-                <strong>Walker</strong>
-                <span>6月 20, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/Swift/">Swift</a>
-            </span>
-            
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="undefined" data-count-type="comments"></span>
-                </span>
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
-	
-		
-			<!-- Random Thumbnail -->
-			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2016/06/13/一个渣渣学习Swift（一）/">一个渣渣学习Swift（一）</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-          简单介绍下自己我先说说自己，自己本身并不是科班出身，我的专业与计算机是毫不搭边的，大学专业学的采矿专业（毕竟山西人…）。由于采矿工程并不是自己所喜欢的专业，2014年一个偶然的机会去了杭州，开始了自己的iOS开发之路（可以说是实习吧），并且深深的喜欢上了它。虽说Swift这门语言是在2014年的时候推出来的，自己之前是的第一门语言是C，之后是iOS开发（Object-C）但是自己接触它的时候在今年，对Swift还是有点生涩，没关系，共同学习嘛！别的就不扯淡了，开始我们的Swift之路吧！我们就从UI学起（毕竟是看得见的东西）在iOS开发中，我们经常看到的控件是UITableView，我们从它来学起。创建UITableView1234567891011121314151617override func viewDidLoad() &#123;        super.viewDidLoad()        self.title = &quot;tableView of Swift&quot;        //给TableView上头视图        let headView = UIView.init(frame: CGRectMake(0, 64, self.view.frame.size.width, 200))        headView.backgroundColor = UIColor(red: 1.00, green: 0.41,blue: 1.00,alpha: 1.00)                //创建UITableView        let tableView = UITableView(frame: self.view.bounds, style: UITableViewStyle .Plain)        tableView.registerClass(UITableViewCell .self, forCellReuseIdentifier: ID)        tableView.tableHeaderView = headView        tableView.delegate = self        tableView.dataSource = self        self.view .addSubview(tableView)                // Do any additional setup after loading the view, typically from a nib.    &#125;
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/06/13/一个渣渣学习Swift（一）/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/a.png" width="44px" height="44px" alt="Walker's avatar">
-            </div>
-            <div>
-                <strong>Walker</strong>
-                <span>6月 13, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/Swift/">Swift</a>
-            </span>
-            
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span class="ds-thread-count" data-thread-key="undefined" data-count-type="comments"></span>
-                </span>
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
 		<!-- Index nav -->
         <nav class="material-nav mdl-cell mdl-cell--12-col">
             <a class="extend prev" rel="prev" href="/page/2/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_back</i></button></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
@@ -794,7 +665,7 @@
         </a>
         <ul class="dropdown-menu">
             <li>
-            <a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/10/">十月 2016<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/06/">六月 2016<span class="sidebar_archives-count">2</span></a>
+            <a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/10/">十月 2016<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/09/">九月 2016<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">八月 2016<span class="sidebar_archives-count">5</span></a>
         </ul>
     </li>
 
@@ -821,7 +692,7 @@
     <li>
         <a href="/archives">
              文章总数
-             <span class="sidebar-badge">25</span>
+             <span class="sidebar-badge">23</span>
         </a>
     </li>
 </ul>
