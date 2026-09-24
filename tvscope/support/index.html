@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Support · 支持 for TVScope: connecting to Apple TV, network settings, permissions and contact.">
+<title>Support · 支持 — TVScope</title>
+<link rel="canonical" href="https://zhangdo.github.io/tvscope/support/">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="../">TVScope</a><nav aria-label="Pages"><a href="../privacy/">Privacy · 隐私</a><a href="../support/">Support · 支持</a><a href="#contact">Contact · 联系</a></nav></div></header>
+<main class="wrap">
+<div class="hero">
+<p class="eyebrow">Support · 支持</p>
+<h1>Get your Apple TV on screen.<br><span lang="zh-Hans">让 Apple TV 的画面顺利出现。</span></h1>
+<p class="muted">Last updated · 更新日期 <time datetime="2026-09-24">2026-09-24</time></p>
+<div class="pills"><a class="pill" href="#en" lang="en">Read in English</a><a class="pill" href="#zh" lang="zh-Hans">阅读中文</a></div>
+</div>
+<div class="columns">
+<article class="card" id="en" lang="en">
+<p class="label">English</p>
+<h2>Common questions</h2>
+<p class="intro">TVScope shows your Apple TV's screen and sound live on iPhone, iPad or Mac, over your own Wi‑Fi. The two devices talk to each other directly, so most problems come from the network between them.</p>
+<section><h3>What do I need?</h3><ul><li>An Apple TV with AirPlay turned on (Settings › AirPlay and HomeKit).</li><li>Your iPhone, iPad or Mac on the same home network as the Apple TV.</li><li>Local Network access allowed for TVScope.</li></ul></section>
+<section><h3>How do I connect the first time?</h3><p>Open TVScope, choose your Apple TV and tap Show Screen. The Apple TV shows a code; type it in TVScope. Pairing happens once. With Auto Connect on, TVScope reopens the last device when you launch it. The Remote pairs separately, the first time you open it.</p></section>
+<section><h3>I can see the Apple TV, but it will not connect</h3><p>Finding a device and connecting to it are separate steps. Check that you are not on a guest network, a hotspot or an isolated VLAN, and that the router does not use client (AP) isolation. Turn off VPN, TUN or "enhanced" modes in proxy apps such as Clash, Shadowrocket, Surge or Stash, then try again. A plain system proxy is usually fine. <code>No route to host</code> means the connection never reached the Apple TV.</p></section>
+<section><h3>Where is the Local Network setting?</h3><p>iPhone and iPad: Settings › Privacy &amp; Security › Local Network › TVScope. Mac: System Settings › Privacy &amp; Security › Local Network › TVScope. After you change it, quit TVScope and open it again.</p></section>
+<section><h3>The picture stops when I leave the app</h3><p>iOS pauses network listening in the background and when the screen locks. Keep TVScope in the foreground while you capture, and turn off Low Power Mode while you test.</p></section>
+<section><h3>Mac: the Apple TV never answers</h3><p>The Apple TV connects back to your Mac. In System Settings › Network › Firewall › Options, allow incoming connections for TVScope. Tools such as Little Snitch or LuLu can also block it. If the Mac uses Wi‑Fi and Ethernet at the same time, try one of them only.</p></section>
+<section><h3>Where are my screenshots and recordings?</h3><p>In TVScope's Library. They go to Photos only when you turn on Save to Photos or save an item yourself.</p></section>
+</article>
+<article class="card" id="zh" lang="zh-Hans">
+<p class="label">简体中文</p>
+<h2>常见问题</h2>
+<p class="intro">TVScope 通过你自己的 Wi‑Fi，在 iPhone、iPad 或 Mac 上实时显示 Apple TV 的画面和声音。两台设备在局域网内直接通信，所以大多数问题都出在它们之间的网络上。</p>
+<section><h3>需要准备什么？</h3><ul><li>一台已开启 AirPlay 的 Apple TV（设置 › AirPlay 与 HomeKit）。</li><li>iPhone、iPad 或 Mac 与 Apple TV 连接同一个家庭网络。</li><li>已允许 TVScope 使用“本地网络”。</li></ul></section>
+<section><h3>第一次怎么连接？</h3><p>打开 TVScope，选择你的 Apple TV，点按“显示屏幕”。Apple TV 会显示一个代码，在 TVScope 中输入即可。配对只需一次；开启“自动连接”后，启动时会自动重新打开上次的设备。遥控器需要单独配对，第一次打开遥控器时完成。</p></section>
+<section><h3>能看到 Apple TV，但连接失败</h3><p>发现设备和建立连接是两个步骤。请确认没有使用访客网络、个人热点或被隔离的 VLAN，路由器也没有开启客户端（AP）隔离。请暂时关闭 Clash、Shadowrocket、Surge、Stash 等工具的 VPN、TUN 或“增强模式”后重试，普通系统代理通常没有影响。出现 <code>No route to host</code> 表示连接根本没有到达 Apple TV。</p></section>
+<section><h3>本地网络权限在哪里？</h3><p>iPhone 和 iPad：设置 › 隐私与安全性 › 本地网络 › TVScope。Mac：系统设置 › 隐私与安全性 › 本地网络 › TVScope。修改后请完全退出 TVScope 再重新打开。</p></section>
+<section><h3>离开 App 后画面中断</h3><p>iOS 在后台和锁屏时会暂停网络监听。采集时请让 TVScope 保持在前台，测试时建议关闭低电量模式。</p></section>
+<section><h3>Mac：Apple TV 一直没有回连</h3><p>Apple TV 需要主动连接回你的 Mac。请在“系统设置 › 网络 › 防火墙 › 选项”中允许 TVScope 接收传入连接。Little Snitch、LuLu 等工具也可能拦截。如果 Mac 同时连接了 Wi‑Fi 和以太网，请暂时只保留其中一个。</p></section>
+<section><h3>截图和录制在哪里？</h3><p>在 TVScope 的“资料库”中。只有开启“存储到照片”或手动存储时，才会写入照片图库。</p></section>
+</article>
+</div>
+<section class="contact" id="contact">
+<h2>Contact · 联系方式</h2>
+<dl>
+<dt>Developer · 开发者</dt><dd>Dong Zhang</dd>
+<dt>Email · 电子邮件</dt><dd><a href="mailto:darkhorse8023@gmail.com?subject=TVScope%20Support">darkhorse8023@gmail.com</a></dd>
+<dt>Public issues · 公开反馈</dt><dd><a href="https://github.com/ZhangDo/ZhangDo.github.io/issues/new?title=TVScope%3A%20">github.com/ZhangDo/ZhangDo.github.io/issues</a></dd>
+<dt>Privacy Policy · 隐私政策</dt><dd><a href="../privacy/">zhangdo.github.io/tvscope/privacy/</a></dd>
+</dl>
+<div class="note">
+<p lang="en">Please include your device model and system version, your Apple TV model and tvOS version, the TVScope version from Settings › About, and the exact error text. You can export a diagnostic log in Settings › Developer › Diagnostics. It contains no screen contents. Send logs by email, not in a public issue.</p>
+<p lang="zh-Hans">请附上设备型号和系统版本、Apple TV 型号和 tvOS 版本、TVScope 版本号（设置 › 关于），以及完整的错误文字。可在“设置 › 开发者 › 诊断”中导出诊断日志，日志不含屏幕内容。请通过电子邮件发送日志，不要贴在公开反馈中。</p>
+</div>
+</section>
+</main>
+<footer><div class="wrap row"><span>TVScope · iPhone, iPad &amp; Mac</span><span>Apple TV and AirPlay are trademarks of Apple Inc. · TVScope 与 Apple Inc. 无关联</span></div></footer>
+</body>
+</html>
